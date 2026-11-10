@@ -1,0 +1,54 @@
+[
+  {
+    "file": "mission-cots-1.jpg",
+    "title": "SpaceX Dragon COTS-1 launch",
+    "credit": "NASA/Alan Ault",
+    "url": "https://commons.wikimedia.org/wiki/File:SpaceX_Dragon_COTS-1_launch.jpg",
+    "license": "NASA Images and Media Guidelines — educational use with source credit; no implied endorsement.",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "original": "SpaceX_Website_Design_Assets(1)/SpaceX_Website_Design_Assets/06_Historical_Missions/TL_02_spacex_dragon_cots_1_launch.jpg",
+    "alt": "Falcon 9 carrying Dragon climbs above Cape Canaveral during the COTS-1 launch on 8 December 2010.",
+    "changes": "Whole supplied photograph retained. Auto-oriented, proportionally resized, and JPEG optimized for web; no crop, retouching, background removal, or AI changes.",
+    "imageCaption": "COTS-1 launch · 8 December 2010 · NASA/Alan Ault",
+    "suppliedLicense": "Работа NASA: на Commons отмечена как public domain в США. Указывать NASA и фотографа; использовать в информационном контексте без подразумеваемого одобрения NASA. Правила: https://www.nasa.gov/nasa-brand-center/images-and-media/"
+  },
+  {
+    "file": "mission-demo-2.jpg",
+    "title": "Falcon 9 — Crew Demo-2 liftoff",
+    "credit": "SpaceX / Official SpaceX Photos",
+    "url": "https://www.flickr.com/photos/spacex/49956109671/",
+    "license": "CC BY-NC 2.0 — credit and license link required; noncommercial use.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/2.0/",
+    "original": "SpaceX_Website_Design_Assets(1)/SpaceX_Website_Design_Assets/01_Falcon_9/F9_03_falcon_9_crew_demo_2_liftoff.jpg",
+    "alt": "The complete Falcon 9 and Crew Dragon rocket lifts off during Demo-2, with its nose, body, and engine plume visible.",
+    "changes": "Whole supplied photograph retained. Auto-oriented, proportionally resized, and JPEG optimized for web; no crop, retouching, background removal, or AI changes.",
+    "imageCaption": "Crew Demo-2 liftoff · 30 May 2020 · SpaceX",
+    "suppliedLicense": "На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/"
+  },
+  {
+    "file": "mission-psyche.jpg",
+    "title": "Falcon Heavy — Psyche at the pad, full vehicle",
+    "credit": "NASA/Aubrey Gemignani",
+    "url": "https://images.nasa.gov/details/NHQ202310110001",
+    "license": "NASA Images and Media Guidelines — educational use with source credit; no implied endorsement.",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "original": "SpaceX_Website_Design_Assets(1)/SpaceX_Website_Design_Assets/02_Falcon_Heavy/FH_01_falcon_heavy_psyche_at_the_pad_full_vehicle.jpg",
+    "alt": "The full Falcon Heavy rocket carrying Psyche stands beside its launch tower before launch.",
+    "changes": "Whole supplied photograph retained. Auto-oriented, proportionally resized, and JPEG optimized for web; no crop, retouching, background removal, or AI changes.",
+    "imageCaption": "Psyche preflight at LC-39A · 11 October 2023 · NASA/Aubrey Gemignani",
+    "suppliedLicense": "Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/"
+  },
+  {
+    "file": "mission-starship-flight-5.jpg",
+    "title": "Starship 5 Booster Landing on Mechzilla",
+    "credit": "Steve Jurvetson; derivative: Bech, Prospectprospekt",
+    "url": "https://commons.wikimedia.org/wiki/File:Starship_5_Booster_Landing_on_Mechzilla.jpg",
+    "license": "CC BY 2.0 — credit, source, license link, and change notice required.",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "original": "SpaceX_Website_Design_Assets(1)/SpaceX_Website_Design_Assets/04_Starship/ST_06_starship_5_booster_landing_on_mechzilla.jpg",
+    "alt": "Super Heavy returns beside the launch tower for the Flight 5 booster catch, with its landing engine plume visible.",
+    "changes": "Whole supplied photograph retained. Auto-oriented, proportionally resized, and JPEG optimized for web; no crop, retouching, background removal, or AI changes.",
+    "imageCaption": "Flight 5 Super Heavy tower catch · 13 October 2024 · Steve Jurvetson; derivative by Bech and Prospectprospekt",
+    "suppliedLicense": "CC BY 2.0. Указать автора, источник, ссылку на лицензию и изменения. https://creativecommons.org/licenses/by/2.0/"
+  }
+]
