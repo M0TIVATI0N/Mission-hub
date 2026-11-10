@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SpaceX Mission Hub: explore real rockets, discover historic missions, and design your own educational mission." />
+    <meta name="theme-color" content="#080d13" />
+    <title>Mission archive | Mission Hub</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23ff845c' stroke-width='4'/%3E%3Cellipse cx='32' cy='32' rx='30' ry='10' transform='rotate(-32 32 32)' fill='none' stroke='%23ff845c' stroke-width='3'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-shell wrap" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Mission Hub home">
+          <svg width="35" height="35" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="18" />
+            <ellipse cx="32" cy="32" rx="29" ry="9" transform="rotate(-32 32 32)" />
+          </svg>
+          <span>
+            MISSION
+            <span class="brand-light">HUB</span>
+            <small>AN INDEPENDENT SPACE GUIDE</small>
+          </span>
+        </a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="fleet.html">The fleet</a>
+          <a href="missions.html" class="active" aria-current="page">Missions</a>
+          <a href="launch-lab.html">Launch lab</a>
+          <a href="future.html">The future</a>
+          <a href="about.html">About</a>
+        </div>
+        <a class="header-cta" href="launch-lab.html">
+          Let’s launch
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">02 / THE MILESTONES</p>
+        <h1>History, in motion.</h1>
+        <p class="intro-copy">
+          From the first orbit to returning boosters. Find the moments that made the next
+          ones possible.
+        </p>
+      </section>
+      <section class="wrap section-space pt-0">
+        <div class="mission-toolbar">
+          <div class="search-field">
+            <label class="visually-hidden" for="mission-search">Search missions</label>
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="mission-search"
+              class="form-control"
+              type="search"
+              placeholder="Search a mission, rocket, or destination…"
+              autocomplete="off" />
+          </div>
+          <div class="sort-field">
+            <label for="mission-sort" class="micro">SORT BY</label>
+            <select id="mission-sort" class="form-select">
+              <option value="oldest">Oldest first</option>
+              <option value="newest">Newest first</option>
+              <option value="title">Name A–Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter missions by category">
+          <button class="filter-chip active" data-category="all" aria-pressed="true">
+            All missions
+          </button>
+          <button class="filter-chip" data-category="orbital" aria-pressed="false">
+            Orbital
+          </button>
+          <button class="filter-chip" data-category="recovery" aria-pressed="false">
+            Recovery
+          </button>
+          <button class="filter-chip" data-category="crewed" aria-pressed="false">
+            Crewed
+          </button>
+          <button class="filter-chip" data-category="deep-space" aria-pressed="false">
+            Deep space
+          </button>
+          <button class="filter-chip" data-category="test-flight" aria-pressed="false">
+            Test flights
+          </button>
+        </div>
+        <div class="results-meta">
+          <p id="mission-count" aria-live="polite"></p>
+          <span class="micro muted">A CURATED HISTORICAL ARCHIVE · 2008–2024</span>
+        </div>
+        <div id="mission-grid" class="mission-grid"></div>
+        <div id="mission-empty" class="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h2>No missions in this orbit.</h2>
+          <p>Try another search or select a different category.</p>
+          <button id="reset-search" class="btn btn-accent">Clear filters ↗</button>
+        </div>
+      </section>
+      <dialog id="mission-dialog" class="mission-dialog" aria-labelledby="dialog-title">
+        <button class="dialog-close" aria-label="Close mission details">×</button>
+        <div id="mission-dialog-content"></div>
+      </dialog>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-main">
+        <a class="brand footer-brand" href="index.html">
+          MISSION
+          <span class="brand-light">HUB</span>
+        </a>
+        <p>
+          A little curiosity. An infinite universe.
+          <br />
+          <span>Educational project · Not affiliated with SpaceX or NASA.</span>
+        </p>
+        <a class="footer-link" href="about.html#credits">Sources & credits ↗</a>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 MISSION HUB</span>
+        <span>BUILT ON CURIOSITY. GROUNDED IN SCIENCE.</span>
+        <a href="about.html">About this project ↗</a>
+      </div>
+    </footer>
+    <noscript>
+      <p class="noscript-note">
+        Enable JavaScript to use the mission explorer, comparison tools, quiz, and mission
+        form.
+      </p>
+    </noscript>
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="NANOO/credits.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/explorer.js"></script>
+    <script src="js/launch-lab.js"></script>
+  </body>
+</html>
