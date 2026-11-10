@@ -1,0 +1,15 @@
+SPACECRAFT RING — ILLUSTRATIVE CONCEPT ARTWORK
+
+Credit: AI-generated with OpenAI image generation for Mission Hub.
+Purpose: a floating transparent navigation object inspired by the supplied visual reference.
+This is a fictional twin-ring spacecraft concept, not an operational SpaceX vehicle.
+
+SELECTED FILES
+  spacecraft-ring-v2.png — generated transparent original, 1254 x 1254 RGBA.
+  spacecraft-ring-v2-lossless.webp — selected web asset, pixel-identical to PNG.
+  spacecraft-prompt.txt — exact generation and edge-cleanup prompts.
+
+Built-in image generation was used. No CLI/API fallback or third-party 3D model was used.
+The only local image processing was format optimization to lossless WebP.
+The website displays the whole cutout with object-fit:contain and CSS floating/tilt motion.
+Discarded drafts are not included in the deliverable.
