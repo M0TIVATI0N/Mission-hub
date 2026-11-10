@@ -1,0 +1,454 @@
+SPACE X MISSION HUB — ИСТОЧНИКИ И АВТОРСТВО
+Дата подбора: 2026-11-08
+
+Условия приведены отдельно для каждого файла. Наличие файла в этом архиве не заменяет условия его источника.
+Фотографии и рендеры с сайта NASA могут иметь разных правообладателей. Особенно проверяйте помеченные материалы SpaceX courtesy NASA.
+Для подписи на сайте используйте поле credit и ссылку source_url. Концепты и визуализации подписывайте как таковые.
+
+F9_01 — Falcon 9 на ночной площадке перед Demo-2
+Файл: 01_Falcon_9/F9_01_falcon_9_demo_2_preflight_distant_lightning.jpg
+Credit: NASA/Bill Ingalls
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/NHQ202005290003
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202005290003/NHQ202005290003~large.jpg
+
+F9_02 — Falcon 9 целиком на площадке: Demo-2
+Файл: 01_Falcon_9/F9_02_falcon_9_and_crew_dragon_demo_2_at_the_pad.jpg
+Credit: NASA/Bill Ingalls
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/NHQ202005210009
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202005210009/NHQ202005210009~large.jpg
+
+F9_03 — Falcon 9: старт пилотируемой Demo-2
+Файл: 01_Falcon_9/F9_03_falcon_9_crew_demo_2_liftoff.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/49956109671/
+Файл у источника: https://live.staticflickr.com/65535/49956109671_859b323ede_o.jpg
+
+F9_04 — Falcon 9: дневной старт CRS-12
+Файл: 01_Falcon_9/F9_04_falcon_9_crs_12_liftoff.jpg
+Credit: NASA/Tony Gray and Sandra Joseph
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/KSC-20170814-PH_AWG03_0014
+Файл у источника: https://images-assets.nasa.gov/image/KSC-20170814-PH_AWG03_0014/KSC-20170814-PH_AWG03_0014~large.jpg
+
+F9_05 — Falcon 9: ночная дуга старта Blue Ghost Mission 1
+Файл: 01_Falcon_9/F9_05_falcon_9_blue_ghost_mission_1_launch_streak.jpg
+Credit: NASA/Cory S Huston
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/KSC-20250115-PH-CSH01_0001
+Файл у источника: https://images-assets.nasa.gov/image/KSC-20250115-PH-CSH01_0001/KSC-20250115-PH-CSH01_0001~orig.jpg
+
+F9_06 — Falcon 9: ночной старт IM-2 над зданием VAB
+Файл: 01_Falcon_9/F9_06_falcon_9_im_2_launch_streak_above_the_vab.jpg
+Credit: NASA/Cory S Huston
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/KSC-20250226-PH-CSH01_0002
+Файл у источника: https://images-assets.nasa.gov/image/KSC-20250226-PH-CSH01_0002/KSC-20250226-PH-CSH01_0002~orig.jpg
+
+F9_11 — Falcon 9: ночной старт CRS-1 в 2012 году
+Файл: 01_Falcon_9/F9_11_falcon_9_crs_1_night_launch.jpg
+Credit: NASA/Jim Grossmann
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/KSC-2012-5727
+Файл у источника: https://images-assets.nasa.gov/image/KSC-2012-5727/KSC-2012-5727~orig.jpg
+
+F9_12 — Falcon 9: старт GPS III SV01
+Файл: 01_Falcon_9/F9_12_falcon_9_gps_iii_sv01_liftoff.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/45525648155/
+Файл у источника: https://live.staticflickr.com/7926/45525648155_32fdab17a5_o.jpg
+
+FH_01 — Falcon Heavy целиком на площадке: Psyche
+Файл: 02_Falcon_Heavy/FH_01_falcon_heavy_psyche_at_the_pad_full_vehicle.jpg
+Credit: NASA/Aubrey Gemignani
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/NHQ202310110001
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202310110001/NHQ202310110001~orig.jpg
+
+FH_02 — Falcon Heavy: огонь двигателей при старте Psyche
+Файл: 02_Falcon_Heavy/FH_02_falcon_heavy_psyche_launch_engine_plumes.jpg
+Credit: NASA/Aubrey Gemignani
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/NHQ202310130017
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202310130017/NHQ202310130017~orig.jpg
+
+FH_03 — Falcon Heavy: первый демонстрационный старт
+Файл: 02_Falcon_Heavy/FH_03_falcon_heavy_demonstration_flight_liftoff.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/39337245145/
+Файл у источника: https://live.staticflickr.com/4631/39337245145_5f5630a66a_o.jpg
+
+FH_05 — Falcon Heavy: ночной старт STP-2 над водой
+Файл: 02_Falcon_Heavy/FH_05_falcon_heavy_stp_2_night_liftoff.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/48129269897/
+Файл у источника: https://live.staticflickr.com/65535/48129269897_22d854be5c_o.jpg
+
+FH_07 — Falcon Heavy: демонстрационный запуск в широком кадре
+Файл: 02_Falcon_Heavy/FH_07_falcon_heavy_demonstration_launch_landscape.jpg
+Credit: NASA/Kim Shiflett
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/KSC-20180206-PH_KLS02_0046
+Файл у источника: https://images-assets.nasa.gov/image/KSC-20180206-PH_KLS02_0046/KSC-20180206-PH_KLS02_0046~large.jpg
+
+FH_08 — Falcon Heavy на площадке перед Psyche: широкий кадр
+Файл: 02_Falcon_Heavy/FH_08_falcon_heavy_psyche_at_the_pad_landscape.jpg
+Credit: NASA/Aubrey Gemignani
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/NHQ202310110002
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202310110002/NHQ202310110002~orig.jpg
+
+DR_01 — Cargo Dragon 2 на фоне Земли
+Файл: 03_Dragon/DR_01_cargo_dragon_approaches_the_international_space_station.jpg
+Credit: NASA
+Условия: Материал NASA. Использование регулируется NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA и фотографа; не подразумевать одобрение NASA.
+Источник: https://www.nasa.gov/image-article/spacex-cargo-dragon-approaches-station/
+Файл у источника: https://images-assets.nasa.gov/image/iss065e327741/iss065e327741~orig.jpg
+
+DR_02 — Crew Dragon Resilience перед стыковкой
+Файл: 03_Dragon/DR_02_crew_dragon_resilience_on_approach_to_the_iss.jpg
+Credit: NASA
+Условия: Материал NASA. Использование регулируется NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA и фотографа; не подразумевать одобрение NASA. Wikimedia Commons маркирует этот конкретный файл как public domain (PD-USGov-NASA).
+Источник: https://commons.wikimedia.org/wiki/File:SpaceX_Crew-1_on_approach_to_the_ISS_(ISS064-E-004637).jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/4/40/SpaceX_Crew-1_on_approach_to_the_ISS_%28ISS064-E-004637%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+DR_03 — Crew Dragon Endeavour у МКС
+Файл: 03_Dragon/DR_03_crew_dragon_endeavour_docked_to_the_iss.jpg
+Credit: NASA
+Условия: Материал NASA. Использование регулируется NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA и фотографа; не подразумевать одобрение NASA.
+Источник: https://www.nasa.gov/image-article/spacex-crew-dragon-endeavour/
+Файл у источника: https://images-assets.nasa.gov/image/iss065e281806/iss065e281806~orig.jpg
+
+DR_04 — Интерьер Crew Dragon: панель управления
+Файл: 03_Dragon/DR_04_crew_dragon_interior.jpg
+Credit: SpaceX Photos
+Условия: CC0 1.0; на странице Wikimedia Commons указано посвящение SpaceX общественному достоянию. https://creativecommons.org/publicdomain/zero/1.0/ . Кредит сохранен для прослеживаемости.
+Источник: https://commons.wikimedia.org/wiki/File:Crew_Dragon_Interior_(21314782411).jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/8/8a/Crew_Dragon_Interior_%2821314782411%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+DR_05 — Crew Dragon Demo-1 спускается на парашютах
+Файл: 03_Dragon/DR_05_spacex_demo_1_splashdown.jpg
+Credit: NASA/Cory Huston
+Условия: Материал NASA. Использование регулируется NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA и фотографа; не подразумевать одобрение NASA.
+Источник: https://www.nasa.gov/image-article/spacex-demo-1-splashdown-recovery-i/
+Файл у источника: https://images-assets.nasa.gov/image/KSC-20190308-PH_CSH01_0001/KSC-20190308-PH_CSH01_0001~large.jpg
+
+DR_06 — Подъем Crew Dragon Endeavour на судно
+Файл: 03_Dragon/DR_06_crew_dragon_endeavour_recovered_after_crew_2.jpg
+Credit: NASA/Aubrey Gemignani
+Условия: Материал NASA. Использование регулируется NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA и фотографа; не подразумевать одобрение NASA.
+Источник: https://images.nasa.gov/details/NHQ202111080017
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202111080017/NHQ202111080017~orig.jpg
+
+DR_07 — Прототип Crew Dragon перед аварийным испытанием
+Файл: 03_Dragon/DR_07_spacex_dragon_ready_for_pad_abort_test.jpg
+Credit: NASA/Jim Grossman
+Условия: Материал NASA. Использование регулируется NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA и фотографа; не подразумевать одобрение NASA.
+Источник: https://www.nasa.gov/image-article/spacex-dragon-ready-pad-abort-test/
+Файл у источника: https://www.nasa.gov/wp-content/uploads/2023/03/2015-1945_0.jpg
+
+DR_08 — Crew Dragon и Falcon 9 на закате
+Файл: 03_Dragon/DR_08_crew_dragon_endurance_at_the_launch_pad.jpg
+Credit: NASA/Joel Kowsky
+Условия: Материал NASA. Использование регулируется NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA и фотографа; не подразумевать одобрение NASA.
+Источник: https://www.nasa.gov/image-article/spacex-crew-dragon-endurance-launch-pad/
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202110270012/NHQ202110270012~orig.jpg
+
+DR_09 — Грузовой Dragon первого поколения над Землей
+Файл: 03_Dragon/DR_09_2015_dragon_spacecraft_in_orbit.jpg
+Credit: SpaceX
+Условия: CC0 1.0; на странице Wikimedia Commons указано посвящение SpaceX общественному достоянию. https://creativecommons.org/publicdomain/zero/1.0/ . Кредит сохранен для прослеживаемости.
+Источник: https://commons.wikimedia.org/wiki/File:2015_Dragon_Spacecraft_In_Orbit.jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/6/60/2015_Dragon_Spacecraft_In_Orbit.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+ST_02 — Первый комплексный испытательный полет Starship
+Файл: 04_Starship/ST_02_starship_first_integrated_flight_test.jpg
+Credit: Osunpokeh
+Условия: CC BY-SA 4.0. Указать автора, источник, ссылку на лицензию и изменения. Для переработанного изображения требуется совместимая лицензия ShareAlike. https://creativecommons.org/licenses/by-sa/4.0/
+Источник: https://commons.wikimedia.org/wiki/File:StarshipLaunch.jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/a/ab/StarshipLaunch.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+ST_03 — Старт Starship Flight 3: вид сверху
+Файл: 04_Starship/ST_03_starship_third_integrated_flight_test_liftoff.jpg
+Credit: SpaceX, via NASA
+Условия: На странице NASA указан сторонний кредит SpaceX. Свободная лицензия для этого конкретного файла не указана; размещение на NASA само по себе не делает фотографию public domain. Перед публикацией на сайте уточнить право использования у SpaceX.
+Источник: https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-artemis-mission-progresses-with-spacex-starship-test-flight/
+Файл у источника: https://www.nasa.gov/wp-content/uploads/2024/03/flight-3-liftoff-20240314-001195.jpg
+
+ST_04 — Starship в полете Flight 5
+Файл: 04_Starship/ST_04_spacex_starship_during_ift_5.jpg
+Credit: Steve Jurvetson
+Условия: CC BY 2.0. Указать автора, источник, ссылку на лицензию и изменения. https://creativecommons.org/licenses/by/2.0/
+Источник: https://commons.wikimedia.org/wiki/File:SpaceX_Starship_during_IFT-5.jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/b/b3/SpaceX_Starship_during_IFT-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+ST_06 — Первый захват Super Heavy башней
+Файл: 04_Starship/ST_06_starship_5_booster_landing_on_mechzilla.jpg
+Credit: Steve Jurvetson; derivative: Bech, Prospectprospekt
+Условия: CC BY 2.0. Указать автора, источник, ссылку на лицензию и изменения. https://creativecommons.org/licenses/by/2.0/
+Источник: https://commons.wikimedia.org/wiki/File:Starship_5_Booster_Landing_on_Mechzilla.jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/4/42/Starship_5_Booster_Landing_on_Mechzilla.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+ST_07 — Super Heavy в закатном свете
+Файл: 04_Starship/ST_07_spacex_super_heavy_at_sunset.jpg
+Credit: Steve Jurvetson
+Условия: CC BY 2.0. Указать автора, источник, ссылку на лицензию и изменения. https://creativecommons.org/licenses/by/2.0/
+Источник: https://commons.wikimedia.org/wiki/File:SpaceX_Super_Heavy_at_sunset.jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/0/0f/SpaceX_Super_Heavy_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+ST_08 — Решетчатые рули Super Heavy BN4
+Файл: 04_Starship/ST_08_booster_grid_fins_in_the_high_bay.jpg
+Credit: Lars Plougmann
+Условия: CC BY-SA 2.5. Указать автора, источник, ссылку на лицензию и изменения. Для переработанного изображения требуется совместимая лицензия ShareAlike. https://creativecommons.org/licenses/by-sa/2.5/
+Источник: https://commons.wikimedia.org/wiki/File:Booster_grid_fins_in_the_High_Bay.jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/a/a3/Booster_grid_fins_in_the_High_Bay.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+ST_09 — Носовая часть и закрылок Starship SN15
+Файл: 04_Starship/ST_09_starship_sn15_flap_and_nosecone.jpg
+Credit: Lars Plougmann
+Условия: CC BY-SA 2.0. Указать автора, источник, ссылку на лицензию и изменения. Для переработанного изображения требуется совместимая лицензия ShareAlike. https://creativecommons.org/licenses/by-sa/2.0/
+Источник: https://commons.wikimedia.org/wiki/File:Starship_SN15_flap_and_nosecone_(51437260707).jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/1/11/Starship_SN15_flap_and_nosecone_%2851437260707%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+
+ST_10 — Модель Super Heavy V3 в аэродинамической трубе
+Файл: 04_Starship/ST_10_nasa_and_spacex_test_a_super_heavy_v3_scale_model_in_a_wind_tunnel.jpg
+Credit: NASA
+Условия: Материал NASA. NASA Images and Media Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Сохранить указание NASA; не подразумевать одобрение агентством.
+Источник: https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-spacex-advance-wind-tunnel-tests-for-starship-rocket/
+Файл у источника: https://www.nasa.gov/wp-content/uploads/2026/07/acd25-0156-005.jpg
+
+F9_07 — Falcon 9: посадка CRS-8 на морскую платформу
+Файл: 05_Landings_and_Recovery/F9_07_falcon_9_crs_8_droneship_landing.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/25787998624/
+Файл у источника: https://live.staticflickr.com/1486/25787998624_3ca213be1e_o.jpg
+
+F9_08 — Falcon 9: посадка первой ступени после SES-10
+Файл: 05_Landings_and_Recovery/F9_08_falcon_9_ses_10_first_stage_landing.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/32996435084/
+Файл у источника: https://live.staticflickr.com/3831/32996435084_6c5662caca_o.jpg
+
+F9_09 — Falcon 9: возвращение ускорителя Crew-9 на LZ-1
+Файл: 05_Landings_and_Recovery/F9_09_falcon_9_crew_9_booster_returns_to_lz_1.jpg
+Credit: NASA/Kim Shiflett
+Условия: Фотография NASA; образовательное и информационное использование разрешено по NASA Images and Media Usage Guidelines. NASA просит указывать источник; нельзя подразумевать одобрение NASA. Не является общей лицензией на логотипы и чужие материалы. https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://images.nasa.gov/details/KSC-20240928-PH-KLS03_0159
+Файл у источника: https://images-assets.nasa.gov/image/KSC-20240928-PH-KLS03_0159/KSC-20240928-PH-KLS03_0159~large.jpg
+
+F9_10 — Falcon 9: следы полёта и первой наземной посадки ORBCOMM-2
+Файл: 05_Landings_and_Recovery/F9_10_falcon_9_orbcomm_2_first_stage_landing_trails.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/23604164970/
+Файл у источника: https://live.staticflickr.com/571/23604164970_2a1a2366e4_o.jpg
+
+FH_04 — Falcon Heavy: одновременная посадка двух ускорителей
+Файл: 05_Landings_and_Recovery/FH_04_falcon_heavy_twin_side_booster_landing.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/25254688767/
+Файл у источника: https://live.staticflickr.com/4654/25254688767_59603ff06c_o.jpg
+
+FH_06 — Falcon Heavy: ночная посадка боковых ускорителей STP-2
+Файл: 05_Landings_and_Recovery/FH_06_falcon_heavy_stp_2_side_boosters_land_at_night.jpg
+Credit: SpaceX / Official SpaceX Photos
+Условия: На официальной странице SpaceX в Flickr проверена текущая лицензия CC BY-NC 2.0: указание автора и ссылки на лицензию обязательно, коммерческое использование не разрешено этой лицензией. https://creativecommons.org/licenses/by-nc/2.0/
+Источник: https://www.flickr.com/photos/spacex/48129269942/
+Файл у источника: https://live.staticflickr.com/65535/48129269942_eb9b5c25bc_o.jpg
+
+TL_01 — Falcon 1 — первый успешный орбитальный полёт
+Файл: 06_Historical_Missions/TL_01_falcon_1_flight_4_launch.jpg
+Credit: SpaceX
+Условия: CC0 1.0 / общественное достояние: SpaceX передала этот файл в public domain; это подтверждено на странице Wikimedia Commons. Указание SpaceX сохраняет происхождение снимка.
+Источник: https://commons.wikimedia.org/wiki/File:Falcon_1_Flight_4_launch.jpg
+Файл у источника: https://upload.wikimedia.org/wikipedia/commons/5/5d/Falcon_1_Flight_4_launch.jpg
+
+TL_02 — Dragon COTS-1 — старт первого орбитального возвращения
+Файл: 06_Historical_Missions/TL_02_spacex_dragon_cots_1_launch.jpg
+Credit: NASA/Alan Ault
+Условия: Работа NASA: на Commons отмечена как public domain в США. Указывать NASA и фотографа; использовать в информационном контексте без подразумеваемого одобрения NASA. Правила: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://commons.wikimedia.org/wiki/File:SpaceX_Dragon_COTS-1_launch.jpg
+Файл у источника: https://images-assets.nasa.gov/image/KSC-2010-5791/KSC-2010-5791~orig.jpg
+
+TL_05 — Falcon 9 — первая успешная посадка
+Файл: 06_Historical_Missions/TL_05_orbcomm_2_first_falcon_9_landing.jpg
+Credit: SpaceX Photos
+Условия: CC0 1.0 / общественное достояние: SpaceX передала этот файл в public domain; это подтверждено на странице Wikimedia Commons. Указание SpaceX сохраняет происхождение снимка.
+Источник: https://commons.wikimedia.org/wiki/File:ORBCOMM-2_(23282658734).jpg
+Файл у источника: https://live.staticflickr.com/611/23282658734_571a193371_o.jpg
+
+TL_06 — Demo-2 — первый пилотируемый старт Crew Dragon
+Файл: 06_Historical_Missions/TL_06_demo_2_launch_setting_forth_on_a_historic_journey.jpg
+Credit: NASA/Bill Ingalls
+Условия: Работа NASA; материалы NASA обычно не охраняются авторским правом в США и доступны для информационных веб-страниц и фотоколлекций с указанием источника. Не подразумевать одобрение NASA. Правила: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://www.nasa.gov/image-article/demo-2-launch-setting-forth-historic-journey/
+Файл у источника: https://live.staticflickr.com/65535/49953827947_05934be264_o.jpg
+
+TL_07 — Экипаж Demo-2 перед отправлением на старт
+Файл: 06_Historical_Missions/TL_07_spacex_demo_2_walkout_30_may_2020.jpg
+Credit: NASA/Kim Shiflett
+Условия: Работа NASA: на Commons отмечена как public domain в США. Указывать NASA и фотографа; использовать в информационном контексте без подразумеваемого одобрения NASA. Правила: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://commons.wikimedia.org/wiki/File:SpaceX_Demo-2_Walkout_30.5.2020.jpg
+Файл у источника: https://images-assets.nasa.gov/image/KSC-20200530-PH-KLS02_0022/KSC-20200530-PH-KLS02_0022~large.jpg
+
+TL_08 — Crew Dragon Demo-2 приближается к МКС
+Файл: 06_Historical_Missions/TL_08_crew_dragon_approaches_the_iss_iss063e021460.jpg
+Credit: NASA/Chris Cassidy
+Условия: Работа NASA: на Commons отмечена как public domain в США. Указывать NASA и фотографа; использовать в информационном контексте без подразумеваемого одобрения NASA. Правила: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://commons.wikimedia.org/wiki/File:The_SpaceX_Crew_Dragon_approaches_the_International_Space_Station_(iss063e021460).jpg
+Файл у источника: https://images-assets.nasa.gov/image/iss063e021460/iss063e021460~orig.jpg
+
+AB_03 — Производство сопел двигателей Merlin 1D
+Файл: 07_Engineering_and_About/AB_03_making_a_spacex_engine.jpg
+Credit: Steve Jurvetson
+Условия: CC BY 2.0: указывать автора и источник, давать ссылку https://creativecommons.org/licenses/by/2.0/ и отмечать изменения. В набор включён исходный файл без изменений.
+Источник: https://commons.wikimedia.org/wiki/File:Making_a_SpaceX_Engine.jpg
+Файл у источника: https://live.staticflickr.com/8341/8233308933_c85587525b_o.jpg
+
+AB_04 — Merlin 1D и силовая конструкция Octaweb
+Файл: 07_Engineering_and_About/AB_04_merlin_1d_engines_and_octaweb_harness.jpg
+Credit: Steve Jurvetson
+Условия: CC BY 2.0: указывать автора и источник, давать ссылку https://creativecommons.org/licenses/by/2.0/ и отмечать изменения. В набор включён исходный файл без изменений.
+Источник: https://commons.wikimedia.org/wiki/File:Merlin_1D_engines_and_octaweb_harness.jpg
+Файл у источника: https://live.staticflickr.com/5450/8975298066_7cbbd3b7fb_o.jpg
+
+AB_05 — Двигатели Falcon 9 после первой успешной посадки
+Файл: 07_Engineering_and_About/AB_05_falcon_9_b1019_engines_after_recovery.jpg
+Credit: SpaceX Photos
+Условия: CC0 1.0 / общественное достояние: SpaceX передала этот файл в public domain; это подтверждено на странице Wikimedia Commons. Указание SpaceX сохраняет происхождение снимка.
+Источник: https://commons.wikimedia.org/wiki/File:Falcon_9_first_stage_in_hangar;_upgraded_Merlin_engines_close-up_(24175842635).jpg
+Файл у источника: https://live.staticflickr.com/1608/24175842635_2ac80bc9f7_o.jpg
+
+AB_06 — Demo-2 глазами центра управления запуском
+Файл: 07_Engineering_and_About/AB_06_demo_2_from_the_launch_control_center.jpg
+Credit: NASA/Joel Kowsky
+Условия: Работа NASA; материалы NASA обычно не охраняются авторским правом в США и доступны для информационных веб-страниц и фотоколлекций с указанием источника. Не подразумевать одобрение NASA. Правила: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://www.nasa.gov/image-article/liftoff-demo-2-heads-space-station/
+Файл у источника: https://images-assets.nasa.gov/image/NHQ202005300015/NHQ202005300015~large.jpg
+
+AB_07 — Завод SpaceX — сборка и испытания
+Файл: 07_Engineering_and_About/AB_07_spacex_factory_assembly_and_testing_stations.jpg
+Credit: Bruno Sanchez-Andrade Nuño
+Условия: CC BY 2.0: указывать автора и источник, давать ссылку https://creativecommons.org/licenses/by/2.0/ и отмечать изменения. В набор включён исходный файл без изменений.
+Источник: https://commons.wikimedia.org/wiki/File:SpaceX_factory.jpg
+Файл у источника: https://live.staticflickr.com/1436/5166109232_9f3af64c68_o.jpg
+
+AB_08 — Вернувшаяся ступень Falcon 9 в ангаре
+Файл: 07_Engineering_and_About/AB_08_recovered_falcon_9_b1019_in_the_hangar.jpg
+Credit: SpaceX Photos
+Условия: CC0 1.0 / общественное достояние: SpaceX передала этот файл в public domain; это подтверждено на странице Wikimedia Commons. Указание SpaceX сохраняет происхождение снимка.
+Источник: https://commons.wikimedia.org/wiki/File:Falcon_9_first_stage_in_hangar.jpg
+Файл у источника: https://live.staticflickr.com/5634/23985921532_e9c2a51dde_o.jpg
+
+AB_09 — Девять двигателей Merlin 1C первой ступени Falcon 9
+Файл: 07_Engineering_and_About/AB_09_nine_merlin_1c_engines_of_a_falcon_9.jpg
+Credit: NASA/Jack Pfaller
+Условия: Работа NASA; на Commons отмечена как public domain в США. Указывать NASA/Jack Pfaller; информационное использование без подразумеваемого одобрения NASA. Правила: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Источник: https://commons.wikimedia.org/wiki/File:Nine_Merlin_1C_engines_of_a_Falcon_9.jpg
+Файл у источника: https://images-assets.nasa.gov/image/KSC-2011-3304/KSC-2011-3304~orig.jpg
+
+MO_01 — Полная Луна: модель по данным LRO
+Файл: 08_Moon/MO_01_full_moon.jpg
+Credit: NASA's Goddard Space Flight Center
+Условия: Материал NASA; источник допускает образовательное и информационное использование при соблюдении правил NASA. Сохраняйте credit; изображение не означает поддержку проекта NASA.
+Источник: https://images.nasa.gov/details/GSFC_20171208_Archive_e001861
+Файл у источника: https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001861/GSFC_20171208_Archive_e001861~orig.jpg
+
+MO_02 — Луна: панорама станции 6 Apollo 17
+Файл: 08_Moon/MO_02_jsc2004e52779_panorama_view_of_apollo_17_lunar_surface_photos_for_station_6_.jpg
+Credit: NASA / Apollo 17
+Условия: Материал NASA; образовательное и информационное использование согласно NASA Images and Media Guidelines. Сохраняйте credit NASA.
+Источник: https://images.nasa.gov/details/jsc2004e52779
+Файл у источника: https://images-assets.nasa.gov/image/jsc2004e52779/jsc2004e52779~orig.jpg
+
+MO_03 — Apollo 17: вид из лунного модуля
+Файл: 08_Moon/MO_03_apollo_17_panorama_of_the_moon_from_lunar_module.jpg
+Credit: NASA / Apollo 17
+Условия: Материал NASA; образовательное и информационное использование согласно NASA Images and Media Guidelines. Сохраняйте credit NASA.
+Источник: https://images.nasa.gov/details/AS17-145-22216
+Файл у источника: https://images-assets.nasa.gov/image/AS17-145-22216/AS17-145-22216~orig.jpg
+
+MA_01 — Марс: глобальный цветной вид
+Файл: 09_Mars/MA_01_global_color_views_of_mars.jpg
+Credit: NASA/JPL/USGS
+Условия: Материал NASA/JPL; используйте с полным credit и с учётом JPL Image Use Policy и отмеченных там исключений.
+Источник: https://images.nasa.gov/details/PIA00407
+Файл у источника: https://images-assets.nasa.gov/image/PIA00407/PIA00407~orig.jpg
+
+MA_02 — Марс: панорама дельты кратера Езеро
+Файл: 09_Mars/MA_02_detailed_panorama_of_mars_jezero_crater_delta.jpg
+Credit: NASA/JPL-Caltech/ASU/MSSS
+Условия: Материал NASA/JPL: credit NASA/JPL-Caltech/ASU/MSSS. Применяется JPL Image Use Policy с отмеченными там исключениями.
+Источник: https://images.nasa.gov/details/PIA24921
+Файл у источника: https://images-assets.nasa.gov/image/PIA24921/PIA24921~large.jpg
+
+MA_03 — Марс: шар планеты и долины Маринера
+Файл: 09_Mars/MA_03_mars_planet_globe.jpg
+Credit: NASA/JPL-Caltech
+Условия: Материал NASA/JPL; используйте с полным credit и с учётом JPL Image Use Policy и отмеченных там исключений.
+Источник: https://science.nasa.gov/resource/mars-planet-globe/
+Файл у источника: https://assets.science.nasa.gov/content/dam/science/psd/mars/downloadable_items/3/7/37983_mars-globe-valles-marineris-enhanced.jpg
+
+OR_01 — МКС над Землёй: съёмка с Crew Dragon
+Файл: 10_Orbits_and_Satellites/OR_01_iss066e080762.jpg
+Credit: NASA
+Условия: Материал NASA; источник допускает образовательное и информационное использование при соблюдении правил NASA. Сохраняйте credit; изображение не означает поддержку проекта NASA.
+Источник: https://images.nasa.gov/details/iss066e080762
+Файл у источника: https://images-assets.nasa.gov/image/iss066e080762/iss066e080762~orig.jpg
+
+OR_02 — GOES-R: крупный план — визуализация
+Файл: 10_Orbits_and_Satellites/OR_02_goes_r_conceptual_visualization.png
+Credit: NASA's Goddard Space Flight Center
+Условия: Материал NASA; источник допускает образовательное и информационное использование при соблюдении правил NASA. Сохраняйте credit; изображение не означает поддержку проекта NASA.
+Источник: https://svs.gsfc.nasa.gov/12371/
+Файл у источника: https://svs.gsfc.nasa.gov/vis/a010000/a012300/a012371/GOESR_Conceptual_2_V2-2.png
+
+OR_03 — GOES-R: на орбите Земли — визуализация
+Файл: 10_Orbits_and_Satellites/OR_03_goes_r_conceptual_visualization.png
+Credit: NASA's Goddard Space Flight Center
+Условия: Материал NASA; источник допускает образовательное и информационное использование при соблюдении правил NASA. Сохраняйте credit; изображение не означает поддержку проекта NASA.
+Источник: https://svs.gsfc.nasa.gov/12371/
+Файл у источника: https://svs.gsfc.nasa.gov/vis/a010000/a012300/a012371/GOESR_SpaceShot1_V2-2.png
+
+FU_01 — Starship HLS: астронавты у лунного посадочного корабля
+Файл: 11_Future_Concepts/FU_01_artist_s_concepts_depict_spacex_s_starship_hls_on_the_moon_for_nasa_artemis.jpg
+Credit: SpaceX (courtesy NASA)
+Условия: Концепт предоставлен SpaceX и опубликован NASA. Отдельная свободная лицензия на странице NASA не указана; credit SpaceX сохраняется. Для использования за пределами учебного проекта проверьте условия правообладателя.
+Источник: https://images.nasa.gov/details/09%2024%2024%20First%20steps%20Axiom%20suits
+Файл у источника: https://images-assets.nasa.gov/image/09%2024%2024%20First%20steps%20Axiom%20suits/09%2024%2024%20First%20steps%20Axiom%20suits~orig.jpg
+
+FU_02 — Starship HLS на поверхности Луны — концепт
+Файл: 11_Future_Concepts/FU_02_artist_s_concepts_depict_spacex_s_starship_hls_on_the_moon_for_nasa_artemis.jpg
+Credit: SpaceX (courtesy NASA)
+Условия: Концепт предоставлен SpaceX и опубликован NASA. Отдельная свободная лицензия на странице NASA не указана; credit SpaceX сохраняется. Для использования за пределами учебного проекта проверьте условия правообладателя.
+Источник: https://images.nasa.gov/details/11%2003%2024%20artemis%203%20on%20surface
+Файл у источника: https://images-assets.nasa.gov/image/11%2003%2024%20artemis%203%20on%20surface/11%2003%2024%20artemis%203%20on%20surface~orig.jpg
+
+FU_03 — Starship HLS: торможение перед посадкой — концепт
+Файл: 11_Future_Concepts/FU_03_artist_s_concept_portrays_spacex_s_starship_hls_with_raptor_engines_for_nasa.jpg
+Credit: SpaceX (courtesy NASA)
+Условия: Концепт предоставлен SpaceX и опубликован NASA. Отдельная свободная лицензия на странице NASA не указана; credit SpaceX сохраняется. Для использования за пределами учебного проекта проверьте условия правообладателя.
+Источник: https://images.nasa.gov/details/11%2004%2024%20hls%202%20raptors
+Файл у источника: https://images-assets.nasa.gov/image/11%2004%2024%20hls%202%20raptors/11%2004%2024%20hls%202%20raptors~orig.jpg
+
+FU_04 — Орбитальная заправка Starship — концепт
+Файл: 11_Future_Concepts/FU_04_artist_s_concepts_depict_spacex_s_starship_hls_en_route_to_the_moon_for_nasa.jpg
+Credit: SpaceX (courtesy NASA)
+Условия: Концепт предоставлен SpaceX и опубликован NASA. Отдельная свободная лицензия на странице NASA не указана; credit SpaceX сохраняется. Для использования за пределами учебного проекта проверьте условия правообладателя.
+Источник: https://images.nasa.gov/details/11%2014%2024%20fuel%20depot
+Файл у источника: https://images-assets.nasa.gov/image/11%2014%2024%20fuel%20depot/11%2014%2024%20fuel%20depot~orig.jpg
+
+FU_05 — Лунная база Artemis — концепт NASA
+Файл: 11_Future_Concepts/FU_05_artemis_base_camp_concept.jpg
+Credit: NASA
+Условия: Материал NASA; источник допускает образовательное и информационное использование при соблюдении правил NASA. Сохраняйте credit; изображение не означает поддержку проекта NASA.
+Источник: https://www.nasa.gov/blogs/missions/2020/10/28/lunar-living-nasas-artemis-base-camp-concept/
+Файл у источника: https://www.nasa.gov/wp-content/uploads/2020/10/surface-1024x576-1.jpg

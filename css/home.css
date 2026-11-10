@@ -1,0 +1,881 @@
+.home-page {
+  --menu-header-height: 92px;
+  display: grid;
+  grid-template-rows: var(--menu-header-height) minmax(0, 1fr);
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow-x: clip;
+}
+.home-page .site-header {
+  height: var(--menu-header-height);
+}
+.home-page #main {
+  min-height: 0;
+}
+.home-page .space-menu {
+  display: grid;
+  grid-template-rows: 44px clamp(150px, 22vh, 190px) minmax(0, 1fr) 46px;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+}
+.home-page .hero-telemetry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  column-gap: 16px;
+  grid-row: 1;
+  padding-top: 0;
+}
+.home-page .hero-telemetry .motion-toggle {
+  grid-column: 3;
+  justify-self: end;
+}
+.home-page .hero-heading {
+  grid-row: 2;
+  text-align: center;
+  align-self: center;
+  padding: 0;
+  pointer-events: none;
+}
+.home-page .hero-heading .eyebrow {
+  justify-content: center;
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+.home-page .hero-heading h1 {
+  font-size: clamp(2.7rem, min(5vw, 7.4vh), 5.2rem);
+  line-height: 1.04;
+  margin-bottom: 10px;
+}
+.home-page .hero-heading h1 em {
+  font-style: normal;
+  color: var(--text);
+}
+.home-page .hero-heading > p:not(.eyebrow) {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+.home-page .hero-heading .atlas-missions {
+  pointer-events: auto;
+  min-height: 34px;
+  padding: 8px 18px;
+  margin-top: 10px;
+  font-size: 11px;
+  line-height: 1.4;
+  gap: 18px;
+}
+.home-page .star-sky {
+  opacity: 0.32;
+}
+
+.orbital-atlas {
+  --earth-frame: min(34vw, 50vh, 470px);
+  --moon-size: clamp(80px, 9vw, 132px);
+  --mars-size: clamp(88px, 10vw, 148px);
+  --craft-size: clamp(110px, 12vw, 182px);
+  grid-row: 3;
+  min-height: 0;
+  position: relative;
+  width: min(1380px, calc(100% - 80px));
+  height: 100%;
+  margin-inline: auto;
+  isolation: isolate;
+}
+.earth-aura {
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  width: min(65vw, 76vh);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, #6287b414 10%, #234e7410 42%, transparent 68%);
+  z-index: -1;
+  pointer-events: none;
+}
+.orbit-guides {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.orbit-ring {
+  fill: none;
+  stroke: #9cbbd02e;
+  stroke-width: 0.7;
+}
+.orbit-ring-outer {
+  stroke: #9cbbd018;
+  stroke-dasharray: 2 8;
+}
+.orbit-ring-inner {
+  stroke: #9cbbd01f;
+}
+.orbit-tracer {
+  fill: none;
+  stroke: #b3d9eb;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 1 999;
+  animation: orbit-travel 70s linear infinite;
+  filter: drop-shadow(0 0 5px #a9d9f5);
+}
+.transfer-path {
+  fill: none;
+  stroke: #ff98614d;
+  stroke-width: 1;
+  stroke-dasharray: 4 10;
+  animation: route-flow 7s linear infinite;
+}
+.route-beacon {
+  fill: #ffc298;
+  animation: beacon-pulse 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 5px #ff9861);
+}
+@keyframes orbit-travel {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+@keyframes route-flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+@keyframes beacon-pulse {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+.orbital-object {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: var(--text);
+  border-radius: 8px;
+}
+.orbital-object:hover {
+  color: var(--text);
+}
+.orbital-object:focus-visible {
+  outline-offset: 10px;
+}
+.moon-object {
+  left: 13%;
+  top: 52%;
+  width: 170px;
+}
+.earth-object {
+  left: 50%;
+  top: 48%;
+  width: var(--earth-frame);
+  gap: 7px;
+  z-index: 2;
+}
+.spacecraft-node {
+  left: 76%;
+  top: 25%;
+  width: var(--craft-size);
+  z-index: 3;
+}
+.mars-object {
+  left: 92%;
+  top: 56%;
+  width: 160px;
+}
+.celestial-image {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 35px #0009;
+  flex-shrink: 0;
+  transition:
+    box-shadow 0.35s,
+    filter 0.35s;
+}
+.celestial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.moon-body {
+  width: var(--moon-size);
+  height: var(--moon-size);
+  animation:
+    moon-drift 8s ease-in-out infinite alternate,
+    moon-rim 9s ease-in-out infinite alternate;
+}
+.moon-body img {
+  transform: scale(1.12);
+  animation: moon-turn 110s linear infinite;
+}
+.mars-body {
+  width: var(--mars-size);
+  height: var(--mars-size);
+  animation:
+    mars-drift 7.5s ease-in-out -2s infinite alternate,
+    mars-rim 8s ease-in-out -3s infinite alternate;
+}
+.mars-body img {
+  transform: scale(1.15);
+  animation: mars-turn 90s linear infinite;
+}
+
+.celestial-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 38%, #03070c66 100%);
+  opacity: 0.3;
+  animation: planet-light 12s ease-in-out infinite alternate;
+}
+.mars-body::after {
+  animation-delay: -4s;
+}
+@keyframes moon-turn {
+  from {
+    transform: rotate(0deg) scale(1.12);
+  }
+  to {
+    transform: rotate(360deg) scale(1.12);
+  }
+}
+@keyframes mars-turn {
+  from {
+    transform: rotate(0deg) scale(1.15);
+  }
+  to {
+    transform: rotate(360deg) scale(1.15);
+  }
+}
+@keyframes moon-drift {
+  from {
+    transform: translate3d(-2px, 0, 0);
+  }
+  to {
+    transform: translate3d(2px, -6px, 0);
+  }
+}
+@keyframes mars-drift {
+  from {
+    transform: translate3d(-2px, -1px, 0);
+  }
+  to {
+    transform: translate3d(2px, -7px, 0);
+  }
+}
+@keyframes moon-rim {
+  from {
+    box-shadow: 0 0 18px #b6d2e711;
+  }
+  to {
+    box-shadow: 0 0 28px #b6d2e744;
+  }
+}
+@keyframes mars-rim {
+  from {
+    box-shadow: 0 0 20px #e76f441a;
+  }
+  to {
+    box-shadow: 0 0 32px #ff976b44;
+  }
+}
+@keyframes planet-light {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 0.65;
+  }
+}
+.orbital-object:hover .celestial-image {
+  filter: brightness(1.14);
+  box-shadow: 0 0 38px #9dc7ed30;
+}
+.object-caption {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+}
+.object-kicker {
+  display: block;
+  font: 7px/1.7 var(--mono);
+  letter-spacing: 0.1em;
+  color: #a0b8ca;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+.object-caption h2 {
+  font-size: 24px;
+  margin: 0 0 8px;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+.object-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 10px;
+  color: #c5d0da;
+  line-height: 1.6;
+}
+.object-action > span {
+  color: var(--orange);
+  transition: translate 0.2s;
+}
+.orbital-object:hover .object-action > span {
+  translate: 3px -2px;
+}
+.earth-object .object-kicker {
+  font-size: 7px;
+  color: var(--cyan);
+}
+.earth-object .object-kicker .status-dot {
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+}
+.earth-object .object-caption h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.earth-action {
+  border: 1px solid #ff865f88;
+  border-radius: 3px;
+  padding: 9px 18px;
+  margin-top: 12px;
+  color: var(--text);
+  background: #10182280;
+  font-size: 11px;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.earth-object:hover .earth-action {
+  background: #ff865f16;
+  border-color: var(--orange);
+}
+
+.home-page .earth-horizon {
+  position: relative;
+  z-index: 0;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2000 / 1613;
+  flex-shrink: 0;
+  background: none;
+  opacity: 1;
+  mix-blend-mode: normal;
+  animation: earth-orbit 28s ease-in-out infinite alternate;
+  filter: brightness(1.2) saturate(1.08) drop-shadow(0 0 14px #6597dd33);
+}
+.home-page .earth-horizon::after {
+  display: none;
+}
+.home-page .earth-surface {
+  position: absolute;
+  inset: 0;
+  background: url("../NANOO/earth-globe.jpg") center / 100% 100% no-repeat;
+  mask-image: radial-gradient(ellipse 40% 49.6% at 50% 50%, #000 98%, transparent 100%);
+  transform-origin: 50% 50%;
+  animation: earth-turn 240s linear infinite;
+  will-change: transform;
+}
+.home-page .earth-surface::after {
+  content: "";
+  position: absolute;
+  top: 1.4%;
+  left: 10.4%;
+  width: 79.2%;
+  aspect-ratio: 1;
+  border: 1px solid #9bceff44;
+  border-radius: 50%;
+  box-shadow:
+    0 0 26px 9px #619edb22,
+    inset 0 0 18px #8ccfff22;
+  opacity: 0.5;
+  pointer-events: none;
+  animation: atmosphere-breathe 9s ease-in-out infinite alternate;
+}
+@keyframes earth-turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes earth-orbit {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(3px, -5px, 0);
+  }
+}
+@keyframes atmosphere-breathe {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 0.85;
+  }
+}
+.spacecraft-object {
+  width: 100%;
+  height: var(--craft-size);
+  min-height: 0;
+  flex-shrink: 0;
+  aspect-ratio: 1;
+  display: block;
+  animation: rocket-travel 5.6s ease-in-out infinite;
+}
+.rocket-flight {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: perspective(900px) rotateZ(34deg);
+  transform-origin: center;
+  animation: rocket-aim 7s ease-in-out infinite alternate;
+}
+
+.rocket-flight::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 84%;
+  width: 14%;
+  height: 13%;
+  background: radial-gradient(
+    ellipse at 50% 10%,
+    #fff3b6cc,
+    #ffb44b66 35%,
+    #ff74331a 65%,
+    transparent 80%
+  );
+  transform: translateX(-50%);
+  transform-origin: 50% 0;
+  filter: blur(2px);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: rocket-burn 0.9s ease-in-out infinite alternate;
+}
+.spacecraft-object picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.home-page .spacecraft-art {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px #8cbce327);
+  transition: filter 0.3s;
+}
+.spacecraft-node .object-caption h2 {
+  font-size: 20px;
+}
+.spacecraft-node:hover .spacecraft-art {
+  filter: drop-shadow(0 5px 22px #9ad2ff77) brightness(1.12);
+}
+@keyframes rocket-aim {
+  from {
+    transform: perspective(900px) rotateY(-6deg) rotateZ(30deg);
+  }
+  to {
+    transform: perspective(900px) rotateY(6deg) rotateZ(38deg);
+  }
+}
+
+@keyframes rocket-travel {
+  0%,
+  100% {
+    transform: translate3d(-3px, 2px, 0);
+  }
+  50% {
+    transform: translate3d(5px, -5px, 0);
+  }
+}
+@keyframes rocket-burn {
+  from {
+    opacity: 0.3;
+    transform: translateX(-50%) scale(0.88, 0.92);
+  }
+  to {
+    opacity: 0.8;
+    transform: translateX(-50%) scale(1.08, 1.12);
+  }
+}
+
+.home-page .hero-bottom {
+  position: relative;
+  grid-row: 4;
+  align-self: stretch;
+  align-items: center;
+  bottom: auto;
+}
+.atlas-archive,
+.home-credits {
+  font-size: 10px;
+  color: #bac7d2;
+  padding: 5px 0;
+  min-height: 28px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.atlas-archive > span:first-child {
+  font-size: 18px;
+  line-height: 1;
+  color: #d5e9f5;
+}
+.atlas-archive > span:last-child,
+.home-credits > span {
+  color: var(--orange);
+}
+.menu-prompt {
+  margin: 0;
+  font: 7px/1.6 var(--mono);
+  letter-spacing: 0.1em;
+  color: #9fb3c3;
+}
+
+.meteor-layer {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.shooting-star {
+  position: absolute;
+  left: var(--start-x);
+  top: var(--start-y);
+  width: var(--trail-length);
+  height: 1px;
+  opacity: 0;
+  border-radius: 100%;
+  transform-origin: right center;
+  background: linear-gradient(90deg, transparent, #85b7db77 48%, #dceeff 92%, #fff);
+  box-shadow: 0 0 5px #bddfff44;
+  animation: falling-star var(--flight-duration) linear var(--flight-delay) infinite both;
+  will-change: transform, opacity;
+}
+.shooting-star::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #eef8ff;
+  box-shadow: 0 0 8px #b7dcffcc;
+}
+@keyframes falling-star {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(var(--flight-angle));
+  }
+  3% {
+    opacity: 0.85;
+  }
+  9% {
+    opacity: 0.7;
+  }
+  14%,
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--travel-x), var(--travel-y), 0)
+      rotate(var(--flight-angle));
+  }
+}
+.scene-inactive .shooting-star,
+.scene-inactive .star-sky,
+.scene-inactive .twinkle-star,
+.scene-inactive .earth-horizon,
+.scene-inactive .earth-surface,
+.scene-inactive .earth-surface::after,
+.scene-inactive .spacecraft-object,
+.scene-inactive .spacecraft-art,
+.scene-inactive .rocket-flight,
+.scene-inactive .rocket-flight::after,
+.scene-inactive .celestial-image,
+.scene-inactive .celestial-image::after,
+.scene-inactive .moon-body img,
+.scene-inactive .mars-body img,
+.scene-inactive .orbit-tracer,
+.scene-inactive .transfer-path,
+.scene-inactive .route-beacon {
+  animation-play-state: paused !important;
+}
+
+@media (max-width: 1000px) {
+  .orbital-atlas {
+    width: calc(100% - 48px);
+    --moon-size: clamp(64px, 10vw, 96px);
+    --mars-size: clamp(72px, 11vw, 104px);
+  }
+  .moon-object {
+    width: 150px;
+    left: 13%;
+  }
+  .mars-object {
+    width: 140px;
+    left: 91%;
+  }
+  .object-kicker {
+    font-size: 6px;
+    letter-spacing: 0.04em;
+  }
+  .object-caption h2 {
+    font-size: 21px;
+  }
+  .object-action {
+    font-size: 9px;
+    gap: 6px;
+  }
+}
+@media (max-width: 600px) {
+  .home-page {
+    --menu-header-height: 66px;
+  }
+  .home-page .nav-links {
+    top: var(--menu-header-height);
+  }
+  .home-page .space-menu {
+    grid-template-rows: 32px clamp(110px, 20vh, 150px) minmax(0, 1fr) 38px;
+  }
+  .home-page .hero-telemetry {
+    padding: 0;
+  }
+  .home-page .hero-heading .eyebrow {
+    font-size: 6px;
+    margin-bottom: 10px;
+  }
+  .home-page .hero-heading h1 {
+    font-size: clamp(1.9rem, 8.8vw, 2.8rem);
+    line-height: 1.06;
+    margin-bottom: 10px;
+  }
+  .home-page .hero-heading > p:not(.eyebrow) {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  .home-page .hero-heading .atlas-missions {
+    min-height: 32px;
+    padding: 7px 14px;
+    font-size: 10px;
+  }
+  .orbital-atlas {
+    width: calc(100% - 24px);
+    --earth-frame: min(52vw, 28vh, 240px);
+    --moon-size: clamp(44px, 14vw, 64px);
+    --mars-size: clamp(46px, 15vw, 68px);
+    --craft-size: clamp(76px, 25vw, 105px);
+  }
+  .earth-aura {
+    width: 100%;
+    top: 55%;
+  }
+  .earth-object {
+    top: 63%;
+  }
+  .moon-object {
+    left: 11.5%;
+    top: 64%;
+    width: 68px;
+  }
+  .spacecraft-node {
+    left: 73%;
+    top: 16%;
+  }
+  .mars-object {
+    left: 91%;
+    top: 62%;
+    width: 66px;
+  }
+  .orbital-object {
+    gap: 9px;
+  }
+  .object-caption h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .object-kicker {
+    display: none;
+  }
+  .object-action {
+    font-size: 8px;
+    line-height: 1.5;
+    gap: 4px;
+  }
+  .moon-object .object-action,
+  .mars-object .object-action {
+    max-width: 66px;
+  }
+  .earth-object .object-caption h2 {
+    font-size: 23px;
+  }
+  .earth-object .object-kicker {
+    display: none;
+  }
+  .earth-action {
+    margin-top: 4px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 10px;
+  }
+  .earth-object:hover .earth-action {
+    background: none;
+  }
+  .spacecraft-node .object-caption h2 {
+    font-size: 14px;
+  }
+  .spacecraft-node .object-action {
+    font-size: 8px;
+  }
+  .orbit-ring {
+    stroke-width: 1;
+  }
+  .orbit-ring-outer {
+    opacity: 0.5;
+  }
+  .home-page .hero-bottom {
+    align-items: center;
+  }
+  .atlas-archive,
+  .home-credits {
+    font-size: 8px;
+    gap: 5px;
+  }
+  .atlas-archive > span:first-child {
+    font-size: 15px;
+  }
+  .menu-prompt {
+    font-size: 5px;
+    max-width: 96px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
+@media (max-width: 600px) and (max-height: 700px) {
+  .home-page .hero-heading .eyebrow {
+    display: none;
+  }
+}
+
+@media (max-height: 560px) and (orientation: landscape) {
+  .home-page {
+    --menu-header-height: 60px;
+  }
+  .home-page .space-menu {
+    grid-template-rows: 26px 76px minmax(0, 1fr) 30px;
+  }
+  .home-page .hero-heading .eyebrow {
+    display: none;
+  }
+  .home-page .hero-heading h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin-bottom: 5px;
+  }
+  .home-page .hero-heading > p:not(.eyebrow) {
+    display: none;
+  }
+  .home-page .hero-heading .atlas-missions {
+    min-height: 28px;
+    padding: 6px 14px;
+    margin-top: 4px;
+    font-size: 10px;
+  }
+  .orbital-atlas {
+    width: calc(100% - 48px);
+    --earth-frame: min(28vw, 38vh, 260px);
+    --moon-size: 45px;
+    --mars-size: 50px;
+    --craft-size: 78px;
+  }
+  .moon-object {
+    left: 13%;
+    top: 55%;
+    width: 96px;
+  }
+  .earth-object {
+    top: 50%;
+  }
+  .spacecraft-node {
+    left: 76%;
+    top: 30%;
+  }
+  .mars-object {
+    left: 92%;
+    top: 56%;
+    width: 96px;
+  }
+  .orbital-object {
+    gap: 5px;
+  }
+  .object-kicker {
+    display: none;
+  }
+  .object-caption h2 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .object-action {
+    font-size: 8px;
+  }
+  .earth-object .object-caption h2 {
+    font-size: 20px;
+  }
+  .earth-object .object-kicker {
+    display: none;
+  }
+  .earth-action {
+    margin-top: 4px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 9px;
+  }
+  .spacecraft-node .object-caption h2 {
+    font-size: 13px;
+  }
+  .home-page .hero-bottom .atlas-archive,
+  .home-credits {
+    font-size: 8px;
+  }
+  .menu-prompt {
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 601px) and (min-height: 561px) and (max-height: 800px) {
+  .orbital-atlas {
+    --earth-frame: min(31vw, 44vh, 410px);
+  }
+  .earth-object {
+    top: 50%;
+  }
+}

@@ -1,0 +1,8 @@
+Use case: background-extraction.
+Asset type: transparent photo cutout for the Mission Hub website.
+Edit target: the supplied real SpaceX Falcon Heavy demonstration-flight liftoff photograph. Preserve the actual rocket hardware exactly.
+Primary request: isolate the complete Falcon Heavy rocket from its pointed fairing tip through all three booster/core engine bases, plus a SHORT compact taper of the genuine bright exhaust immediately below it. Remove the entire blue sky, clouds, launch pad, gantry, towers, supports, ground, landscape, all surrounding smoke, and all other objects. The vehicle must remain a realistic photographic cutout from the input, not an imagined spacecraft or redrawn model. Keep the exact white three-core geometry, fairing proportions, black details, seams and lighting. Do not add fins, wings, extra boosters, windows or fictional engines. Preserve the actual silhouette and vertical upright orientation. The rocket is the only subject.
+Composition: portrait transparent canvas, complete rocket centrally placed, generous clear transparent margins around the vehicle, no cropping of the nose tip or any boosters, only a short natural engine-flame tip so that the rocket body remains the main visual at small navigation sizes.
+Background: true transparent alpha around the rocket and flame, no painted checkerboard, no solid rectangle, no shadow plane.
+Edge quality: clean antialiased detailed rocket edges, no blue/white sky halo or neighboring launch structure remnants. Keep real source appearance and proportions.
+Text: do not add any new text, logos, labels or watermark. Retain source hardware details faithfully.

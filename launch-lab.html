@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SpaceX Mission Hub: explore real rockets, discover historic missions, and design your own educational mission." />
+    <meta name="theme-color" content="#080d13" />
+    <title>Launch lab | Mission Hub</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23ff845c' stroke-width='4'/%3E%3Cellipse cx='32' cy='32' rx='30' ry='10' transform='rotate(-32 32 32)' fill='none' stroke='%23ff845c' stroke-width='3'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-shell wrap" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Mission Hub home">
+          <svg width="35" height="35" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="18" />
+            <ellipse cx="32" cy="32" rx="29" ry="9" transform="rotate(-32 32 32)" />
+          </svg>
+          <span>
+            MISSION
+            <span class="brand-light">HUB</span>
+            <small>AN INDEPENDENT SPACE GUIDE</small>
+          </span>
+        </a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="fleet.html">The fleet</a>
+          <a href="missions.html">Missions</a>
+          <a href="launch-lab.html" class="active" aria-current="page">Launch lab</a>
+          <a href="future.html">The future</a>
+          <a href="about.html">About</a>
+        </div>
+        <a class="header-cta" href="launch-lab.html">
+          Let’s launch
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">03 / MISSION CONTROL</p>
+        <h1>Your curiosity. Your mission.</h1>
+        <p class="intro-copy">
+          Choose your vehicle, calculate a planning budget, and turn an idea into a
+          mission brief.
+        </p>
+      </section>
+      <section class="wrap section-space pt-0">
+        <div class="lab-disclaimer">
+          <span class="status-dot"></span>
+          <p>
+            EDUCATIONAL SIMULATOR
+            <span>· Fictional budgets. No booking, payment, or email is sent.</span>
+          </p>
+        </div>
+        <div class="lab-layout">
+          <form id="mission-form" class="lab-form" novalidate>
+            <div class="panel-heading">
+              <p class="eyebrow">01 / CONFIGURE YOUR FLIGHT</p>
+              <span class="micro muted">ALL FIELDS REQUIRED</span>
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="mission-name" class="form-label">Mission name</label>
+                <input
+                  class="form-control"
+                  id="mission-name"
+                  name="missionName"
+                  placeholder="e.g. Aurora-01"
+                  maxlength="40"
+                  autocomplete="off"
+                  required
+                  aria-describedby="mission-name-error" />
+                <div id="mission-name-error" class="invalid-feedback"></div>
+              </div>
+              <div class="field">
+                <label for="commander-name" class="form-label">Your name</label>
+                <input
+                  class="form-control"
+                  id="commander-name"
+                  name="commanderName"
+                  placeholder="Mission commander"
+                  autocomplete="name"
+                  maxlength="80"
+                  required
+                  aria-describedby="commander-name-error" />
+                <div id="commander-name-error" class="invalid-feedback"></div>
+              </div>
+              <div class="field full">
+                <label for="mission-email" class="form-label">Email address</label>
+                <input
+                  class="form-control"
+                  id="mission-email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  maxlength="120"
+                  required
+                  aria-describedby="mission-email-error" />
+                <div id="mission-email-error" class="invalid-feedback"></div>
+              </div>
+              <div class="field">
+                <label for="launch-vehicle" class="form-label">Launch vehicle</label>
+                <select
+                  class="form-select"
+                  id="launch-vehicle"
+                  name="vehicle"
+                  required
+                  aria-describedby="launch-vehicle-error">
+                  <option value="">Choose your rocket</option>
+                </select>
+                <div id="launch-vehicle-error" class="invalid-feedback"></div>
+              </div>
+              <div class="field">
+                <label for="mission-destination" class="form-label">Destination</label>
+                <select
+                  class="form-select"
+                  id="mission-destination"
+                  name="destination"
+                  required
+                  aria-describedby="mission-destination-error">
+                  <option value="">Choose your destination</option>
+                </select>
+                <div id="mission-destination-error" class="invalid-feedback"></div>
+              </div>
+              <div class="field">
+                <label for="payload-mass" class="form-label">
+                  Payload mass
+                  <span>(kg)</span>
+                </label>
+                <input
+                  class="form-control"
+                  id="payload-mass"
+                  name="payload"
+                  type="number"
+                  placeholder="2400"
+                  min="1"
+                  step="1"
+                  required
+                  aria-describedby="payload-mass-error payload-capacity" />
+                <div id="payload-mass-error" class="invalid-feedback"></div>
+                <small id="payload-capacity" class="field-hint">
+                  Choose a rocket and destination to see capacity.
+                </small>
+              </div>
+              <div class="field">
+                <label for="launch-date" class="form-label">Preferred launch date</label>
+                <input
+                  class="form-control"
+                  id="launch-date"
+                  name="launchDate"
+                  type="date"
+                  required
+                  aria-describedby="launch-date-error" />
+                <div id="launch-date-error" class="invalid-feedback"></div>
+              </div>
+              <div class="field full">
+                <label for="mission-profile" class="form-label">Mission purpose</label>
+                <select
+                  class="form-select"
+                  id="mission-profile"
+                  name="profile"
+                  required
+                  aria-describedby="mission-profile-error">
+                  <option value="">What will your mission do?</option>
+                  <option value="science">Science & discovery</option>
+                  <option value="cargo">Cargo & supplies</option>
+                  <option value="communications">Communications</option>
+                </select>
+                <div id="mission-profile-error" class="invalid-feedback"></div>
+              </div>
+              <div class="field full">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="simulation-consent"
+                    required
+                    aria-describedby="simulation-consent-error" />
+                  <label class="form-check-label" for="simulation-consent">
+                    I understand this is an educational simulation.
+                  </label>
+                  <div id="simulation-consent-error" class="invalid-feedback"></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-accent full-button">
+              Generate mission brief
+              <span>↗</span>
+            </button>
+            <p class="form-privacy">
+              Your mission details stay in this tab. The form clears when your brief is
+              ready.
+            </p>
+          </form>
+          <aside class="lab-summary">
+            <div class="summary-visual">
+              <img
+                src="NANOO/earth-globe.jpg"
+                alt="Earth at night viewed from space"
+                width="500"
+                height="500" />
+              <span class="micro">YOUR WINDOW TO THE WORLD</span>
+            </div>
+            <div class="summary-content">
+              <p class="eyebrow">02 / LIVE FLIGHT ESTIMATE</p>
+              <h2>
+                Every great journey
+                <br />
+                starts with a plan.
+              </h2>
+              <div class="estimate-line">
+                <span>Vehicle</span>
+                <strong id="estimate-vehicle">Awaiting selection</strong>
+              </div>
+              <div class="estimate-line">
+                <span>Destination</span>
+                <strong id="estimate-destination">Awaiting selection</strong>
+              </div>
+              <div class="estimate-line">
+                <span>Payload capacity</span>
+                <strong id="estimate-capacity">—</strong>
+              </div>
+              <div
+                class="capacity-bar"
+                role="progressbar"
+                aria-label="Payload capacity used"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0">
+                <span></span>
+              </div>
+              <div class="estimate-total">
+                <span>SIMULATED PLANNING BUDGET</span>
+                <strong id="estimate-cost">—</strong>
+              </div>
+              <p id="estimate-note" class="field-hint">
+                Select a vehicle and destination, then enter a payload.
+              </p>
+              <details class="estimate-method">
+                <summary>How is this calculated?</summary>
+                <p>
+                  Fictional budget = (vehicle base cost + payload × training rate) ×
+                  destination multiplier × purpose multiplier. Capacity is reduced for
+                  farther destinations. This simplified model is for learning, not real
+                  mission feasibility or pricing.
+                </p>
+              </details>
+            </div>
+          </aside>
+        </div>
+        <section
+          id="mission-success"
+          class="mission-success"
+          hidden
+          tabindex="-1"
+          aria-live="polite"></section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-main">
+        <a class="brand footer-brand" href="index.html">
+          MISSION
+          <span class="brand-light">HUB</span>
+        </a>
+        <p>
+          A little curiosity. An infinite universe.
+          <br />
+          <span>Educational project · Not affiliated with SpaceX or NASA.</span>
+        </p>
+        <a class="footer-link" href="about.html#credits">Sources & credits ↗</a>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 MISSION HUB</span>
+        <span>BUILT ON CURIOSITY. GROUNDED IN SCIENCE.</span>
+        <a href="about.html">About this project ↗</a>
+      </div>
+    </footer>
+    <noscript>
+      <p class="noscript-note">
+        Enable JavaScript to use the mission explorer, comparison tools, quiz, and mission
+        form.
+      </p>
+    </noscript>
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="NANOO/credits.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/explorer.js"></script>
+    <script src="js/launch-lab.js"></script>
+  </body>
+</html>

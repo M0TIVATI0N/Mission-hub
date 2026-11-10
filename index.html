@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SpaceX Mission Hub: explore real rockets, discover historic missions, and design your own educational mission." />
+    <meta name="theme-color" content="#080d13" />
+    <title>Choose your next orbit | Mission Hub</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23ff845c' stroke-width='4'/%3E%3Cellipse cx='32' cy='32' rx='30' ry='10' transform='rotate(-32 32 32)' fill='none' stroke='%23ff845c' stroke-width='3'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-shell wrap" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Mission Hub home">
+          <svg width="35" height="35" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="18" />
+            <ellipse cx="32" cy="32" rx="29" ry="9" transform="rotate(-32 32 32)" />
+          </svg>
+          <span>
+            MISSION
+            <span class="brand-light">HUB</span>
+            <small>AN INDEPENDENT SPACE GUIDE</small>
+          </span>
+        </a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="main-nav">
+          <a href="index.html" class="active" aria-current="page">Home</a>
+          <a href="fleet.html">The fleet</a>
+          <a href="missions.html">Missions</a>
+          <a href="launch-lab.html">Launch lab</a>
+          <a href="future.html">The future</a>
+          <a href="about.html">About</a>
+        </div>
+        <a class="header-cta" href="launch-lab.html">
+          Let’s launch
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="space-menu" aria-labelledby="home-title">
+        <div class="star-sky" aria-hidden="true"></div>
+        <div class="twinkle-layer" aria-hidden="true"></div>
+        <div class="meteor-layer" aria-hidden="true"></div>
+        <div class="hero-telemetry wrap">
+          <span>
+            <i class="status-dot"></i>
+            YOUR CORNER OF THE COSMOS
+          </span>
+          <span>MISSION HUB / ORBITAL ATLAS</span>
+          <button class="motion-toggle" type="button" aria-pressed="false">
+            <span aria-hidden="true">Ⅱ</span>
+            Pause motion
+          </button>
+        </div>
+        <div class="hero-heading wrap">
+          <p class="eyebrow">
+            <span></span>
+            CURIOSITY IS YOUR COMPASS
+            <span></span>
+          </p>
+          <h1 id="home-title">
+            Choose your next
+            <em>orbit.</em>
+          </h1>
+          <p>Start from Earth. Let curiosity take you further.</p>
+          <a class="btn btn-accent atlas-missions" href="missions.html">
+            Explore missions
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <nav class="orbital-atlas" aria-label="Choose a destination in the orbital map">
+          <div class="earth-aura" aria-hidden="true"></div>
+          <svg
+            class="orbit-guides"
+            viewBox="0 0 1200 600"
+            preserveAspectRatio="none"
+            aria-hidden="true">
+            <ellipse
+              class="orbit-ring"
+              cx="600"
+              cy="310"
+              rx="510"
+              ry="165"
+              transform="rotate(-8 600 310)" />
+            <ellipse
+              class="orbit-ring orbit-ring-outer"
+              cx="600"
+              cy="310"
+              rx="565"
+              ry="245"
+              transform="rotate(8 600 310)" />
+            <ellipse
+              class="orbit-ring orbit-ring-inner"
+              cx="600"
+              cy="310"
+              rx="365"
+              ry="110"
+              transform="rotate(-16 600 310)" />
+            <ellipse
+              class="orbit-tracer"
+              cx="600"
+              cy="310"
+              rx="510"
+              ry="165"
+              pathLength="1000"
+              transform="rotate(-8 600 310)" />
+            <path class="transfer-path" d="M 680 285 C 760 100, 930 75, 1085 310" />
+            <circle class="route-beacon" cx="874" cy="151" r="3" />
+          </svg>
+          <a
+            class="orbital-object moon-object"
+            href="future.html#moon"
+            aria-label="Explore the Moon">
+            <span class="celestial-image moon-body">
+              <img
+                src="NANOO/moon.jpg"
+                alt="The cratered Moon"
+                width="300"
+                height="300" />
+            </span>
+            <div class="object-caption">
+              <span class="object-kicker">01 / LUNAR EXPLORATION</span>
+              <h2>Moon</h2>
+              <span class="object-action">
+                Explore the Moon
+                <span aria-hidden="true">↗</span>
+              </span>
+            </div>
+          </a>
+          <a
+            class="orbital-object earth-object"
+            href="launch-lab.html"
+            aria-label="Plan a mission from Earth">
+            <div class="earth-horizon" aria-hidden="true">
+              <div class="earth-surface"></div>
+            </div>
+            <div class="object-caption">
+              <span class="object-kicker">
+                <i class="status-dot"></i>
+                YOU ARE HERE
+              </span>
+              <h2>Earth</h2>
+              <span class="object-action earth-action">
+                Plan a mission
+                <span aria-hidden="true">↗</span>
+              </span>
+            </div>
+          </a>
+          <a
+            class="orbital-object spacecraft-node"
+            href="fleet.html"
+            aria-label="Explore the SpaceX rocket fleet">
+            <span class="spacecraft-object">
+              <span class="rocket-flight">
+                <picture>
+                  <source srcset="NANOO/spacex-rocket-cutout.webp" type="image/webp" />
+                  <img
+                    class="spacecraft-art"
+                    src="NANOO/spacex-rocket-cutout.png"
+                    alt="Falcon Heavy rocket cut out from its SpaceX demonstration launch photograph"
+                    width="1024"
+                    height="1536" />
+                </picture>
+              </span>
+            </span>
+            <div class="object-caption">
+              <span class="object-kicker">02 / SPACEX</span>
+              <h2>Falcon Heavy</h2>
+              <span class="object-action">
+                Meet the fleet
+                <span aria-hidden="true">↗</span>
+              </span>
+            </div>
+          </a>
+          <a
+            class="orbital-object mars-object"
+            href="future.html#mars"
+            aria-label="Explore Mars">
+            <span class="celestial-image mars-body">
+              <img
+                src="NANOO/mars.jpg"
+                alt="Mars and its reddish surface"
+                width="300"
+                height="300" />
+            </span>
+            <div class="object-caption">
+              <span class="object-kicker">03 / NEW HORIZONS</span>
+              <h2>Mars</h2>
+              <span class="object-action">
+                Imagine the journey
+                <span aria-hidden="true">↗</span>
+              </span>
+            </div>
+          </a>
+        </nav>
+        <div class="hero-bottom wrap">
+          <a class="atlas-archive" href="missions.html">
+            <span aria-hidden="true">✧</span>
+            Mission archive
+            <span aria-hidden="true">↗</span>
+          </a>
+          <p class="menu-prompt">A JOURNEY MAP · NOT TO SCALE</p>
+          <a class="home-credits" href="about.html#credits">
+            About &amp; credits
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/space-scene.js"></script>
+  </body>
+</html>
