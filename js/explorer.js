@@ -15,16 +15,7 @@
     "test-flight": "Test flight",
   };
 
-  function element(tag, className, text) {
-    const node = document.createElement(tag);
-    if (className) {
-      node.className = className;
-    }
-    if (text !== undefined) {
-      node.textContent = text;
-    }
-    return node;
-  }
+  const { element } = window.MissionUI;
 
   function image(src, alt, className) {
     const node = element("img", className);
@@ -33,6 +24,29 @@
     node.loading = "lazy";
     node.decoding = "async";
     return node;
+  }
+
+  const STAR_ICON =
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/></svg>';
+
+  // A toggle button handled by js/main.js; it stores the item in MissionStore.
+  function saveButton(type, id, name) {
+    const button = element("button", "save-button");
+    button.type = "button";
+    button.dataset.saveType = type;
+    button.dataset.saveId = id;
+    button.dataset.saveName = name;
+    button.setAttribute("aria-pressed", "false");
+    button.setAttribute("aria-label", `Save ${name} to your mission log`);
+    button.innerHTML = STAR_ICON;
+    button.append(element("span", "save-label", "Save"));
+    return button;
+  }
+
+  function syncSaveButtons(scope) {
+    if (window.MissionUI) {
+      window.MissionUI.syncSaveButtons(scope);
+    }
   }
 
   function sourceLink(url, text) {
@@ -96,11 +110,40 @@
       button.dataset.compare = vehicle.id;
       button.setAttribute("aria-pressed", "false");
       button.setAttribute("aria-label", `Select ${vehicle.name} for comparison`);
-      body.append(stats, button);
+      const actions = element("div", "card-actions");
+      actions.append(button, saveButton("vehicle", vehicle.id, vehicle.name));
+      body.append(stats, actions);
       card.append(body);
       fragment.append(card);
     });
     grid.replaceChildren(fragment);
+    syncSaveButtons(grid);
+
+    // The comparison panel opens and closes with a jQuery slide.
+    function showComparison(children) {
+      const panel = window.jQuery ? window.jQuery(comparison).stop(true, true) : null;
+      const wasHidden = comparison.hidden;
+      comparison.replaceChildren(...children);
+      comparison.hidden = false;
+      if (panel && wasHidden) {
+        panel.hide().slideDown(260);
+      }
+    }
+
+    function hideComparison() {
+      if (comparison.hidden) {
+        return;
+      }
+      const finish = () => {
+        comparison.hidden = true;
+        comparison.replaceChildren();
+      };
+      if (window.jQuery) {
+        window.jQuery(comparison).stop(true, true).slideUp(200, finish);
+      } else {
+        finish();
+      }
+    }
 
     function updateComparison() {
       count.textContent = `${selected.size} / 2 SELECTED`;
@@ -117,9 +160,8 @@
         button.closest(".fleet-card").classList.toggle("selected", active);
       });
 
-      comparison.hidden = selected.size !== 2;
       if (selected.size !== 2) {
-        comparison.replaceChildren();
+        hideComparison();
         return;
       }
 
@@ -195,7 +237,7 @@
         );
         notes.append(paragraph);
       });
-      comparison.replaceChildren(heading, tableWrap, notes);
+      showComparison([heading, tableWrap, notes]);
     }
 
     grid.addEventListener("click", (event) => {
@@ -283,16 +325,19 @@
         button.setAttribute("aria-haspopup", "dialog");
         button.setAttribute("aria-controls", "mission-dialog");
         button.setAttribute("aria-label", `Explore ${mission.title}`);
+        const actions = element("div", "mission-actions");
+        actions.append(button, saveButton("mission", mission.id, mission.title));
         body.append(
           meta,
           element("h2", "", mission.title),
           element("p", "muted", mission.highlight),
-          button,
+          actions,
         );
         card.append(body);
         fragment.append(card);
       });
       grid.replaceChildren(fragment);
+      syncSaveButtons(grid);
       count.textContent = `${visibleMissions.length} of ${data.missions.length} missions`;
       empty.hidden = visibleMissions.length !== 0;
       grid.hidden = visibleMissions.length === 0;
@@ -338,7 +383,12 @@
       addDefinition(meta, "DATE · UTC", dateLabel(mission.date));
       addDefinition(meta, "VEHICLE", mission.vehicle);
       addDefinition(meta, "DESTINATION", mission.destination);
-      body.append(meta, sourceLink(mission.source, "Read the mission source ↗"));
+      const actions = element("div", "dialog-actions");
+      actions.append(
+        sourceLink(mission.source, "Read the mission source ↗"),
+        saveButton("mission", mission.id, mission.title),
+      );
+      body.append(meta, actions);
       const navigation = element("nav", "dialog-navigation");
       navigation.setAttribute("aria-label", "Mission gallery");
       const previous = element("button", "btn btn-outline", "← Previous");
@@ -370,6 +420,7 @@
           return;
         }
         dialogContent.replaceChildren(createDialogContent());
+        syncSaveButtons(dialogContent);
       };
       const focusNavigation = () => {
         if (!focusStep || version !== dialogVersion || !dialog.hasAttribute("open")) {
@@ -465,6 +516,7 @@
         (mission) => mission.id === button.dataset.mission,
       );
       renderDialog(false);
+      dialog.setAttribute("aria-labelledby", "dialog-title");
       dialog.setAttribute("aria-describedby", "dialog-description");
       if (typeof dialog.showModal === "function") {
         dialog.showModal();
@@ -536,6 +588,16 @@
       }
     });
     renderMissions();
+
+    // missions.html?mission=demo-2 (a link from the mission log) opens that mission.
+    const requested = new URLSearchParams(window.location.search).get("mission");
+    const requestedButton = [...grid.querySelectorAll("[data-mission]")].find(
+      (button) => button.dataset.mission === requested,
+    );
+    if (requestedButton) {
+      requestedButton.scrollIntoView({ block: "center" });
+      requestedButton.click();
+    }
   }
 
   function initQuiz() {
@@ -617,18 +679,29 @@
         "muted",
         `You answered ${percentage}% correctly. Explore the mission archive, then try another systems check.`,
       );
+      // The result is saved in localStorage and shown on the profile page.
+      const record = window.MissionStore?.recordQuiz(score, data.quiz.length);
+      const history = element(
+        "p",
+        "quiz-record",
+        record
+          ? `${record.isBest ? "New personal best! " : ""}Best score: ${record.best} / ${data.quiz.length} · Attempts: ${record.attempts}`
+          : "",
+      );
       const restart = element("button", "btn btn-accent", "Try again ↻");
       restart.type = "button";
       restart.dataset.quizRestart = "";
       const archive = element("a", "text-link", "Explore the missions ↗");
       archive.href = "missions.html";
+      const actions = element("div", "quiz-actions");
+      actions.append(restart, archive);
       panel.replaceChildren(
         element("p", "eyebrow", "SYSTEMS CHECK COMPLETE"),
         title,
         scoreText,
         message,
-        restart,
-        archive,
+        history,
+        actions,
       );
       title.focus({ preventScroll: true });
     }
