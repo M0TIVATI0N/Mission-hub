@@ -37,7 +37,7 @@
     menu
       .querySelectorAll("a")
       .forEach((link) => link.addEventListener("click", () => closeMenu()));
-    window.matchMedia("(min-width: 601px)").addEventListener("change", (event) => {
+    window.matchMedia("(min-width: 1024px)").addEventListener("change", (event) => {
       if (event.matches) {
         closeMenu();
       }
@@ -166,6 +166,125 @@
     });
   });
 
+  /* ---------- Saved data in the navigation bar ---------- */
+  const store = window.MissionStore;
+
+  // Creates an element with a class and text — shared by all page scripts.
+  function element(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) {
+      node.className = className;
+    }
+    if (text !== undefined) {
+      node.textContent = text;
+    }
+    return node;
+  }
+
+  function firstName(name) {
+    return String(name).trim().split(/\s+/)[0];
+  }
+
+  function updateNavigation(bump) {
+    if (!store) {
+      return;
+    }
+    const count = store.savedCount();
+    document.querySelectorAll("[data-saved-count]").forEach((badge) => {
+      badge.textContent = String(count);
+      badge.dataset.count = String(count);
+    });
+    if (bump) {
+      document.querySelectorAll(".saved-link").forEach((link) => {
+        link.classList.remove("bump");
+        // Reading offsetWidth restarts the CSS animation.
+        void link.offsetWidth;
+        link.classList.add("bump");
+      });
+    }
+
+    const user = store.currentUser();
+    document.querySelectorAll("[data-account-link]").forEach((link) => {
+      link.href = user ? "profile.html" : "account.html";
+      link.classList.toggle("is-member", Boolean(user));
+      link.querySelector("[data-account-label]").textContent = user
+        ? firstName(user.name)
+        : "Log in";
+      link.querySelector("[data-account-initial]").textContent = user
+        ? firstName(user.name).charAt(0).toUpperCase()
+        : "";
+      link.setAttribute(
+        "aria-label",
+        user ? `Profile of ${user.name}` : "Log in or sign up",
+      );
+    });
+  }
+
+  /* ---------- Toast message (jQuery fade) ---------- */
+  let toast = null;
+  function showToast(message) {
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.className = "toast-note";
+      toast.setAttribute("role", "status");
+      document.body.append(toast);
+    }
+    if (window.jQuery) {
+      // stop(true, true) finishes the previous toast, so fast clicks never queue up.
+      const $toast = window.jQuery(toast).stop(true, true).css("opacity", 0).show();
+      toast.textContent = message;
+      $toast.animate({ opacity: 1 }, 180).delay(2600).fadeOut(320);
+    } else {
+      toast.textContent = message;
+      toast.style.display = "block";
+      window.clearTimeout(showToast.timer);
+      showToast.timer = window.setTimeout(() => {
+        toast.style.display = "none";
+      }, 2800);
+    }
+  }
+
+  /* ---------- Save buttons (fleet cards, mission cards, mission dialog) ---------- */
+  function syncSaveButtons(scope = document) {
+    if (!store) {
+      return;
+    }
+    scope.querySelectorAll("[data-save-type]").forEach((button) => {
+      const saved = store.isSaved(button.dataset.saveType, button.dataset.saveId);
+      button.setAttribute("aria-pressed", String(saved));
+      button.querySelector(".save-label").textContent = saved ? "Saved" : "Save";
+    });
+  }
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-save-type]");
+    if (!button || !store) {
+      return;
+    }
+    const saved = store.toggleSaved(button.dataset.saveType, button.dataset.saveId);
+    const count = store.savedCount();
+    showToast(
+      saved
+        ? `★ ${button.dataset.saveName} is saved. Your mission log has ${count} ${count === 1 ? "item" : "items"}.`
+        : `${button.dataset.saveName} was removed from your mission log.`,
+    );
+  });
+
+  // Every change of saved data (on this page or in another tab) refreshes the UI.
+  document.addEventListener("missionhub:change", () => {
+    updateNavigation(true);
+    syncSaveButtons();
+  });
+  window.addEventListener("storage", (event) => {
+    if (event.key && event.key.startsWith("missionHub.")) {
+      updateNavigation(false);
+      syncSaveButtons();
+    }
+  });
+  updateNavigation(false);
+
+  window.MissionUI = { element, firstName, toast: showToast, syncSaveButtons };
+
   const credits = document.querySelector("#image-credits");
   if (credits && Array.isArray(window.ImageCredits)) {
     const fragment = document.createDocumentFragment();
@@ -186,6 +305,9 @@
       license.textContent = item.license;
       const links = document.createElement("div");
       links.className = "credit-links";
+      if (!item.url && !item.licenseUrl) {
+        links.textContent = "Source: the Mission Hub team";
+      }
       for (const [url, label] of [
         [item.url, "Original source ↗"],
         [item.licenseUrl, "Usage terms ↗"],
