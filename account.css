@@ -1,0 +1,386 @@
+/* Styles for the account, profile and mission log pages.
+   Colours come from the theme variables in style.css. */
+
+/* ---------- Shared ---------- */
+.form-title {
+  font-size: 1.9rem;
+  margin-bottom: 26px;
+}
+.form-message {
+  margin-top: 22px;
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  border-left-width: 3px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.form-message.is-success {
+  border-color: var(--ok-border);
+  background: var(--ok-bg);
+  color: var(--ok-text);
+}
+.form-message.is-error {
+  border-color: var(--danger);
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+.inline-link {
+  color: var(--orange-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.account-form {
+  height: 100%;
+}
+.session-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  margin-bottom: 28px;
+  padding: 18px 22px;
+  border: 1px solid var(--cyan);
+  background: var(--success-bg);
+}
+.session-note p {
+  margin: 0;
+  font-size: 13px;
+}
+.session-actions,
+.profile-actions,
+.clear-actions,
+.log-empty-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+.session-actions .btn,
+.profile-actions .btn,
+.clear-actions .btn,
+.log-empty-links .btn {
+  padding: 11px 18px;
+  font-size: 12px;
+  gap: 14px;
+}
+
+/* ---------- Profile ---------- */
+.profile-card {
+  position: relative;
+  padding: 32px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+}
+.profile-avatar {
+  width: 74px;
+  height: 74px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--on-accent);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 74px;
+  text-align: center;
+  box-shadow: 0 0 0 6px var(--orange-soft);
+}
+.profile-name {
+  font-size: 2.3rem;
+  margin-bottom: 22px;
+  overflow-wrap: anywhere;
+}
+.profile-details {
+  margin: 0 0 26px;
+}
+.profile-details > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+.profile-details dt {
+  font: 400 9px/1.9 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.profile-details dd {
+  margin: 0;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+.profile-subtitle {
+  font-size: 2rem;
+  margin-bottom: 22px;
+}
+.stat-card {
+  height: 100%;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.stat-card:hover {
+  border-color: var(--orange);
+  transform: translateY(-2px);
+}
+.stat-label {
+  margin-bottom: 10px;
+  font: 9px/1.6 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.stat-value {
+  margin: 0;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  white-space: nowrap;
+}
+.stat-note {
+  margin: 8px 0 0;
+  font-size: 10px;
+  color: var(--muted);
+}
+.profile-actions {
+  margin-top: 28px;
+}
+.profile-guest .btn {
+  margin-top: 6px;
+}
+
+/* ---------- Mission log ---------- */
+.log-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.log-count {
+  margin: 0;
+  font: 11px/1.7 var(--mono);
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.log-toolbar .btn {
+  padding: 10px 16px;
+  font-size: 11px;
+  gap: 12px;
+}
+.clear-confirm {
+  margin-top: 20px;
+  padding: 20px 22px;
+  border: 1px solid var(--danger);
+  background: var(--danger-bg);
+}
+.clear-confirm p {
+  font-size: 13px;
+  color: var(--text);
+}
+.log-empty {
+  margin-top: 32px;
+}
+.log-empty-links {
+  justify-content: center;
+  margin-top: 22px;
+}
+.log-section {
+  padding-top: 42px;
+}
+.log-heading {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+.log-heading-count {
+  font-size: 1.1rem;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.log-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.log-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+.log-card:hover {
+  border-color: var(--line-hover);
+  transform: translateY(-2px);
+}
+.log-image {
+  width: 100%;
+  /* height 0 + min-height 100%: the photo fills the card without making it taller. */
+  height: 0;
+  min-height: 100%;
+  padding: 8px;
+  object-fit: contain;
+  background: var(--media-bg);
+  border-right: 1px solid var(--line);
+}
+.log-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+  min-width: 0;
+  min-height: 200px;
+}
+.log-body .eyebrow {
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+.log-body h3 {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+.log-body .muted {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.log-date {
+  font: 9px/1.6 var(--mono);
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.log-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  margin-top: auto;
+}
+.log-actions .text-link {
+  font-size: 12px;
+  gap: 14px;
+  padding-block: 5px;
+}
+.remove-button {
+  padding: 7px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background-color 0.2s;
+}
+.remove-button:hover {
+  border-color: var(--danger);
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.log-table th,
+.log-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: middle;
+}
+.log-table thead th {
+  font: 400 9px/1.6 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.log-table tbody th {
+  font-weight: 500;
+}
+.log-table tbody tr {
+  transition: background-color 0.2s;
+}
+.log-table tbody tr:hover {
+  background: var(--orange-soft);
+}
+.log-table .numeric {
+  text-align: right;
+  white-space: nowrap;
+}
+.log-table tfoot th,
+.log-table tfoot td {
+  border-bottom: 0;
+  border-top: 2px solid var(--orange);
+  font-size: 13px;
+  font-weight: 500;
+}
+.log-table tfoot td.numeric {
+  color: var(--orange-text);
+  font-size: 1.2rem;
+}
+.log-empty-line {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 18px 0;
+  border-top: 1px dashed var(--line-strong);
+}
+
+@media (max-width: 1100px) {
+  .log-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .form-title {
+    font-size: 1.6rem;
+  }
+  .profile-card {
+    padding: 24px;
+  }
+  .profile-name {
+    font-size: 1.9rem;
+  }
+  .profile-subtitle,
+  .log-heading {
+    font-size: 1.6rem;
+  }
+  .stat-card {
+    padding: 16px;
+  }
+  .stat-value {
+    font-size: 1.45rem;
+  }
+  .log-toolbar {
+    align-items: flex-start;
+  }
+  .log-card {
+    grid-template-columns: 1fr;
+  }
+  .log-body {
+    min-height: 0;
+  }
+  .log-image {
+    height: 220px;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .log-table {
+    min-width: 640px;
+  }
+}
