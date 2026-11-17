@@ -1,4 +1,27 @@
 .home-page {
+  /* Night-mode colours of the orbital menu. */
+  --space-bg: #03070c;
+  --hero-muted: #a9b6c2;
+  --hero-soft: #c2cbd1;
+  --orbit-line: #9cbbd02e;
+  --orbit-line-outer: #9cbbd018;
+  --orbit-line-inner: #9cbbd01f;
+  --orbit-tracer: #b3d9eb;
+  --orbit-tracer-glow: #a9d9f5;
+  --transfer-line: #ff98614d;
+  --beacon: #ffc298;
+  --aura: #6287b414;
+  --aura-edge: #234e7410;
+  --planet-shadow: #0009;
+  --planet-hover-glow: #9dc7ed30;
+  --kicker: #a0b8ca;
+  --action: #c5d0da;
+  --earth-btn-bg: #10182280;
+  --earth-btn-hover: #ff865f16;
+  --earth-btn-border: #ff865f88;
+  --archive-text: #bac7d2;
+  --archive-icon: #d5e9f5;
+  --craft-shadow: #8cbce327;
   --menu-header-height: 92px;
   display: grid;
   grid-template-rows: var(--menu-header-height) minmax(0, 1fr);
@@ -90,7 +113,12 @@
   width: min(65vw, 76vh);
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, #6287b414 10%, #234e7410 42%, transparent 68%);
+  background: radial-gradient(
+    circle,
+    var(--aura) 10%,
+    var(--aura-edge) 42%,
+    transparent 68%
+  );
   z-index: -1;
   pointer-events: none;
 }
@@ -104,34 +132,34 @@
 }
 .orbit-ring {
   fill: none;
-  stroke: #9cbbd02e;
+  stroke: var(--orbit-line);
   stroke-width: 0.7;
 }
 .orbit-ring-outer {
-  stroke: #9cbbd018;
+  stroke: var(--orbit-line-outer);
   stroke-dasharray: 2 8;
 }
 .orbit-ring-inner {
-  stroke: #9cbbd01f;
+  stroke: var(--orbit-line-inner);
 }
 .orbit-tracer {
   fill: none;
-  stroke: #b3d9eb;
+  stroke: var(--orbit-tracer);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-dasharray: 1 999;
   animation: orbit-travel 70s linear infinite;
-  filter: drop-shadow(0 0 5px #a9d9f5);
+  filter: drop-shadow(0 0 5px var(--orbit-tracer-glow));
 }
 .transfer-path {
   fill: none;
-  stroke: #ff98614d;
+  stroke: var(--transfer-line);
   stroke-width: 1;
   stroke-dasharray: 4 10;
   animation: route-flow 7s linear infinite;
 }
 .route-beacon {
-  fill: #ffc298;
+  fill: var(--beacon);
   animation: beacon-pulse 4s ease-in-out infinite alternate;
   filter: drop-shadow(0 0 5px #ff9861);
 }
@@ -198,7 +226,7 @@
   position: relative;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 35px #0009;
+  box-shadow: 0 0 35px var(--planet-shadow);
   flex-shrink: 0;
   transition:
     box-shadow 0.35s,
@@ -303,7 +331,7 @@
 }
 .orbital-object:hover .celestial-image {
   filter: brightness(1.14);
-  box-shadow: 0 0 38px #9dc7ed30;
+  box-shadow: 0 0 38px var(--planet-hover-glow);
 }
 .object-caption {
   display: block;
@@ -314,7 +342,7 @@
   display: block;
   font: 7px/1.7 var(--mono);
   letter-spacing: 0.1em;
-  color: #a0b8ca;
+  color: var(--kicker);
   margin-bottom: 5px;
   white-space: nowrap;
 }
@@ -330,15 +358,15 @@
   justify-content: center;
   gap: 10px;
   font-size: 10px;
-  color: #c5d0da;
+  color: var(--action);
   line-height: 1.6;
 }
 .object-action > span {
-  color: var(--orange);
-  transition: translate 0.2s;
+  color: var(--orange-text);
+  transition: transform 0.2s;
 }
 .orbital-object:hover .object-action > span {
-  translate: 3px -2px;
+  transform: translate(3px, -2px);
 }
 .earth-object .object-kicker {
   font-size: 7px;
@@ -354,19 +382,19 @@
   margin-bottom: 0;
 }
 .earth-action {
-  border: 1px solid #ff865f88;
+  border: 1px solid var(--earth-btn-border);
   border-radius: 3px;
   padding: 9px 18px;
   margin-top: 12px;
   color: var(--text);
-  background: #10182280;
+  background: var(--earth-btn-bg);
   font-size: 11px;
   transition:
     background 0.2s,
     border-color 0.2s;
 }
 .earth-object:hover .earth-action {
-  background: #ff865f16;
+  background: var(--earth-btn-hover);
   border-color: var(--orange);
 }
 
@@ -486,7 +514,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 8px 16px #8cbce327);
+  filter: drop-shadow(0 8px 16px var(--craft-shadow));
   transition: filter 0.3s;
 }
 .spacecraft-node .object-caption h2 {
@@ -534,7 +562,7 @@
 .atlas-archive,
 .home-credits {
   font-size: 10px;
-  color: #bac7d2;
+  color: var(--archive-text);
   padding: 5px 0;
   min-height: 28px;
   line-height: 1.4;
@@ -545,17 +573,11 @@
 .atlas-archive > span:first-child {
   font-size: 18px;
   line-height: 1;
-  color: #d5e9f5;
+  color: var(--archive-icon);
 }
 .atlas-archive > span:last-child,
 .home-credits > span {
-  color: var(--orange);
-}
-.menu-prompt {
-  margin: 0;
-  font: 7px/1.6 var(--mono);
-  letter-spacing: 0.1em;
-  color: #9fb3c3;
+  color: var(--orange-text);
 }
 
 .meteor-layer {
@@ -657,9 +679,6 @@
 @media (max-width: 600px) {
   .home-page {
     --menu-header-height: 66px;
-  }
-  .home-page .nav-links {
-    top: var(--menu-header-height);
   }
   .home-page .space-menu {
     grid-template-rows: 32px clamp(110px, 20vh, 150px) minmax(0, 1fr) 38px;
@@ -772,12 +791,6 @@
   .atlas-archive > span:first-child {
     font-size: 15px;
   }
-  .menu-prompt {
-    font-size: 5px;
-    max-width: 96px;
-    text-align: center;
-    letter-spacing: 0.02em;
-  }
 }
 @media (max-width: 600px) and (max-height: 700px) {
   .home-page .hero-heading .eyebrow {
@@ -866,9 +879,6 @@
   .home-credits {
     font-size: 8px;
   }
-  .menu-prompt {
-    font-size: 6px;
-  }
 }
 
 @media (min-width: 601px) and (min-height: 561px) and (max-height: 800px) {
@@ -877,5 +887,129 @@
   }
   .earth-object {
     top: 50%;
+  }
+}
+
+/* =========================================================
+   Day mode of the orbital menu
+   The whole screen (header included) shows NANOO/spaceLight.png,
+   so the header blends into the sky. Night mode keeps the stars.
+   ========================================================= */
+:root[data-theme="light"] .home-page {
+  --space-bg: transparent;
+  --hero-muted: #3b4757;
+  --hero-soft: #2f3b4c;
+  --orbit-line: #ffffffb3;
+  --orbit-line-outer: #ffffff99;
+  --orbit-line-inner: #ffffffa6;
+  --orbit-tracer: #ffffff;
+  --orbit-tracer-glow: #ffffff;
+  --transfer-line: #e8673a8c;
+  --beacon: #e8673a;
+  --aura: #ffffff59;
+  --aura-edge: #bfe0ff33;
+  --planet-shadow: #3d5a7a40;
+  --planet-hover-glow: #ffffffaa;
+  --kicker: #4a5566;
+  --action: #1f2937;
+  --earth-btn-bg: #ffffffa6;
+  --earth-btn-hover: #ffffffe6;
+  --earth-btn-border: #e8673a;
+  --archive-text: #2f3b4c;
+  --archive-icon: #1f2937;
+  --craft-shadow: #3d5a7a33;
+  --orange-text: #b4461c;
+  --header-bg: linear-gradient(180deg, #ffffff4d, #ffffff14);
+  --header-text: #111827;
+  --header-muted: #2f3b4c;
+  --header-small: #4a5566;
+  --header-accent: #b4461c;
+  --header-line: #ffffff8c;
+  --header-btn-border: #11182780;
+  --menu-bg: #f7fbfff2;
+  --menu-line: #d7e4ef;
+  background: #cfe3f3 url("../NANOO/spaceLight.png") center top / cover no-repeat;
+}
+:root[data-theme="light"] .home-page .site-header {
+  backdrop-filter: blur(6px);
+}
+:root[data-theme="light"] .home-page .star-sky,
+:root[data-theme="light"] .home-page .meteor-layer {
+  display: none;
+}
+:root[data-theme="light"] .home-page .twinkle-star {
+  background: #ffffff;
+  box-shadow: 0 0 10px 2px #ffffffaa;
+}
+:root[data-theme="light"] .home-page .earth-horizon {
+  filter: brightness(1.04) saturate(1.05) drop-shadow(0 12px 30px #3d6a9a40);
+}
+/* Daytime Earth. The globe in earthLight.png (1200×1200) is centred with a
+   radius of about 46% of the image; at 90% it is a little larger than the
+   round mask, so the black space around the photo is cut away. */
+:root[data-theme="light"] .home-page .earth-surface {
+  background: url("../NANOO/earthLight.png") 50% 50% / 90% auto no-repeat;
+}
+
+/* Shimmering buttons at the top of the menu — day mode only. */
+:root[data-theme="light"] .home-page .tool-button,
+:root[data-theme="light"] .home-page .menu-toggle {
+  position: relative;
+  overflow: hidden;
+  border-color: #1118278c;
+  background: linear-gradient(
+    110deg,
+    #ffffff73 0%,
+    #fff3cfd9 22%,
+    #d4ecffd9 46%,
+    #ffe1d2d9 70%,
+    #ffffff73 100%
+  );
+  background-size: 260% 100%;
+  box-shadow:
+    0 6px 18px #6f9cc433,
+    inset 0 1px 0 #ffffffcc;
+  animation: sky-shimmer 9s ease-in-out infinite alternate;
+}
+:root[data-theme="light"] .home-page .tool-button::after,
+:root[data-theme="light"] .home-page .menu-toggle::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: 0;
+  width: 40%;
+  background: linear-gradient(100deg, transparent, #ffffffd9, transparent);
+  transform: translateX(-160%) skewX(-18deg);
+  animation: sky-sheen 5.5s ease-in-out infinite;
+  pointer-events: none;
+}
+:root[data-theme="light"] .home-page .nav-tools > :nth-child(2)::after {
+  animation-delay: 0.35s;
+}
+:root[data-theme="light"] .home-page .nav-tools > :nth-child(3)::after {
+  animation-delay: 0.7s;
+}
+:root[data-theme="light"] .home-page .tool-button:hover {
+  border-color: var(--orange);
+  box-shadow:
+    0 8px 24px #e8673a40,
+    inset 0 1px 0 #ffffffcc;
+}
+@keyframes sky-shimmer {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+@keyframes sky-sheen {
+  0%,
+  55% {
+    transform: translateX(-160%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(360%) skewX(-18deg);
   }
 }
