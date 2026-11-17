@@ -4,6 +4,7 @@
   function initializeLaunchLab() {
     const form = document.querySelector("#mission-form");
     const model = window.MissionHubData?.launch;
+    const { element } = window.MissionUI;
     if (!form || !model) {
       return;
     }
@@ -74,6 +75,21 @@
       controls.destination.value = requestedDestination;
     }
     refreshMinimumDate();
+
+    // A logged-in crew member does not need to type their name and email again.
+    function prefillFromAccount() {
+      const user = window.MissionStore?.currentUser();
+      if (!user) {
+        return;
+      }
+      if (!controls.commanderName.value) {
+        controls.commanderName.value = user.name;
+      }
+      if (!controls.email.value) {
+        controls.email.value = user.email;
+      }
+    }
+    prefillFromAccount();
 
     function selectedConfiguration() {
       const vehicle = model.vehicles.find((item) => item.id === controls.vehicle.value);
@@ -259,17 +275,6 @@
       }
     }
 
-    function element(tag, className, content) {
-      const node = document.createElement(tag);
-      if (className) {
-        node.className = className;
-      }
-      if (content !== undefined) {
-        node.textContent = content;
-      }
-      return node;
-    }
-
     function downloadBrief(text, missionName) {
       const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
       const url = URL.createObjectURL(blob);
@@ -328,6 +333,32 @@
         "No booking, payment, or email was sent.",
       ].join("\n");
       download.addEventListener("click", () => downloadBrief(briefText, missionName));
+
+      // Saves the brief to localStorage; it appears in the mission log (saved.html).
+      const save = element("button", "btn btn-outline", "Save to mission log ★");
+      save.type = "button";
+      save.id = "save-brief";
+      save.addEventListener("click", () => {
+        if (!window.MissionStore || save.disabled) {
+          return;
+        }
+        save.disabled = true;
+        window.MissionStore.addBrief({
+          missionName,
+          commander: commanderName,
+          vehicle: vehicle.name,
+          destination: destination.name,
+          payload,
+          launchDate,
+          purpose: profile.name,
+          capacityUsed: Math.round((payload / capacity) * 100),
+          budget: calculateBudget(configuration),
+        });
+        save.textContent = "Saved to mission log ✓";
+        window.MissionUI?.toast(
+          `★ ${missionName} is saved. Open “Saved” in the menu to see all your briefs.`,
+        );
+      });
       const reset = element("button", "btn btn-outline", "Plan another mission ↗");
       reset.type = "button";
       reset.id = "new-mission";
@@ -338,13 +369,14 @@
         }
         success.hidden = true;
         success.replaceChildren();
+        prefillFromAccount();
         form.scrollIntoView({
           behavior: reduceMotion.matches ? "auto" : "smooth",
           block: "start",
         });
         controls.missionName.focus({ preventScroll: true });
       });
-      actions.append(download, reset);
+      actions.append(save, download, reset);
       success.replaceChildren(eyebrow, heading, description, facts, disclaimer, actions);
       success.hidden = false;
       if (window.jQuery) {
